@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="41">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="83">
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="КодСправочника" id="68">
+					<DataPath>Объект.КодСправочника</DataPath>
+					<ContextMenu name="КодСправочникаКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="КодСправочникаРасширеннаяПодсказка" id="70"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="ПоСальдо" id="74">
+			<DataPath>Объект.ФормироватьПоСальдо</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПоСальдоКонтекстноеМеню" id="75"/>
+			<ExtendedTooltip name="ПоСальдоРасширеннаяПодсказка" id="76"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВключитьВОтчетОКапитале" id="80">
+			<DataPath>Объект.ВключитьВОтчетОКапитале</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВключитьВОтчетОКапиталеКонтекстноеМеню" id="81"/>
+			<ExtendedTooltip name="ВключитьВОтчетОКапиталеРасширеннаяПодсказка" id="82"/>
+		</CheckBoxField>
+		<CheckBoxField name="НеИспользуется" id="85">
+			<DataPath>Объект.НеИспользуется</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеИспользуетсяКонтекстноеМеню" id="86"/>
+			<ExtendedTooltip name="НеИспользуетсяРасширеннаяПодсказка" id="87"/>
+		</CheckBoxField>
+		<Table name="Корреспонденция1" id="43">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Корреспонденция</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="Корреспонденция1КонтекстноеМеню" id="44"/>
+			<AutoCommandBar name="Корреспонденция1КоманднаяПанель" id="45"/>
+			<ExtendedTooltip name="Корреспонденция1РасширеннаяПодсказка" id="46"/>
+			<SearchStringAddition name="Корреспонденция1СтрокаПоиска" id="47">
+				<AdditionSource>
+					<Item>Корреспонденция1</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Корреспонденция1СтрокаПоискаКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="Корреспонденция1СтрокаПоискаРасширеннаяПодсказка" id="49"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="Корреспонденция1СостояниеПросмотра" id="50">
+				<AdditionSource>
+					<Item>Корреспонденция1</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Корреспонденция1СостояниеПросмотраКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="Корреспонденция1СостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="Корреспонденция1УправлениеПоиском" id="53">
+				<AdditionSource>
+					<Item>Корреспонденция1</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="Корреспонденция1УправлениеПоискомКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="Корреспонденция1УправлениеПоискомРасширеннаяПодсказка" id="55"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Корреспонденция1НомерСтроки" id="56">
+					<DataPath>Объект.Корреспонденция.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Корреспонденция1НомерСтрокиКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="Корреспонденция1НомерСтрокиРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<InputField name="Корреспонденция1Счет" id="59">
+					<DataPath>Объект.Корреспонденция.Счет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Корреспонденция1СчетКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="Корреспонденция1СчетРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="Корреспонденция1КорСчет" id="62">
+					<DataPath>Объект.Корреспонденция.КорСчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Корреспонденция1КорСчетКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="Корреспонденция1КорСчетРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="Корреспонденция1ТипДвижения" id="77">
+					<DataPath>Объект.Корреспонденция.ТипДвижения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Корреспонденция1ТипДвиженияКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="Корреспонденция1ТипДвиженияРасширеннаяПодсказка" id="79"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВидыДвижения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

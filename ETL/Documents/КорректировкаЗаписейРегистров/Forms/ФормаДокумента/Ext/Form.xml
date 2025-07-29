@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗагрузитьОстаток" id="7">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьОстаток</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьОстатокРасширеннаяПодсказка" id="8"/>
+			</Button>
+			<Button name="ФормаЗагузитьОбороты" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьОбороты</CommandName>
+				<ExtendedTooltip name="ФормаЗагузитьОборотыРасширеннаяПодсказка" id="10"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="25">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="23">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<InputField name="База" id="20">
+					<DataPath>Объект.База</DataPath>
+					<ContextMenu name="БазаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="Организация" id="11">
+					<DataPath>Объект.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="13"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Автор" id="17">
+			<DataPath>Объект.Автор</DataPath>
+			<ContextMenu name="АвторКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="19"/>
+		</InputField>
+		<InputField name="Комментарий" id="14">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="16"/>
+		</InputField>
+		<Pages name="Группа3" id="27">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<Page name="ГруппаНачальныеОстатки" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начальные остатки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа начальные остатки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНачальныеОстаткиРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<Table name="НачальныйОстаток" id="236">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>НачальныйОстаток</DataPath>
+							<RowPictureDataPath>НачальныйОстаток.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="НачальныйОстатокКонтекстноеМеню" id="237"/>
+							<AutoCommandBar name="НачальныйОстатокКоманднаяПанель" id="238"/>
+							<ExtendedTooltip name="НачальныйОстатокРасширеннаяПодсказка" id="239"/>
+							<SearchStringAddition name="НачальныйОстатокСтрокаПоиска" id="240">
+								<AdditionSource>
+									<Item>НачальныйОстаток</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НачальныйОстатокСтрокаПоискаКонтекстноеМеню" id="241"/>
+								<ExtendedTooltip name="НачальныйОстатокСтрокаПоискаРасширеннаяПодсказка" id="242"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НачальныйОстатокСостояниеПросмотра" id="243">
+								<AdditionSource>
+									<Item>НачальныйОстаток</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НачальныйОстатокСостояниеПросмотраКонтекстноеМеню" id="244"/>
+								<ExtendedTooltip name="НачальныйОстатокСостояниеПросмотраРасширеннаяПодсказка" id="245"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НачальныйОстатокУправлениеПоиском" id="246">
+								<AdditionSource>
+									<Item>НачальныйОстаток</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НачальныйОстатокУправлениеПоискомКонтекстноеМеню" id="247"/>
+								<ExtendedTooltip name="НачальныйОстатокУправлениеПоискомРасширеннаяПодсказка" id="248"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НачальныйОстатокПериод" id="249">
+									<DataPath>НачальныйОстаток.Period</DataPath>
+									<ContextMenu name="НачальныйОстатокПериодКонтекстноеМеню" id="250"/>
+									<ExtendedTooltip name="НачальныйОстатокПериодРасширеннаяПодсказка" id="251"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокНомерСтроки" id="255">
+									<DataPath>НачальныйОстаток.LineNumber</DataPath>
+									<ContextMenu name="НачальныйОстатокНомерСтрокиКонтекстноеМеню" id="256"/>
+									<ExtendedTooltip name="НачальныйОстатокНомерСтрокиРасширеннаяПодсказка" id="257"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокБаза" id="258">
+									<DataPath>НачальныйОстаток.База</DataPath>
+									<ContextMenu name="НачальныйОстатокБазаКонтекстноеМеню" id="259"/>
+									<ExtendedTooltip name="НачальныйОстатокБазаРасширеннаяПодсказка" id="260"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокОрганизация" id="261">
+									<DataPath>НачальныйОстаток.Организация</DataPath>
+									<ContextMenu name="НачальныйОстатокОрганизацияКонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="НачальныйОстатокОрганизацияРасширеннаяПодсказка" id="263"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокТипСальдо" id="264">
+									<DataPath>НачальныйОстаток.ТипСальдо</DataPath>
+									<ContextMenu name="НачальныйОстатокТипСальдоКонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="НачальныйОстатокТипСальдоРасширеннаяПодсказка" id="266"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСчет" id="267">
+									<DataPath>НачальныйОстаток.Счет</DataPath>
+									<ContextMenu name="НачальныйОстатокСчетКонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="НачальныйОстатокСчетРасширеннаяПодсказка" id="269"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокВалюта" id="270">
+									<DataPath>НачальныйОстаток.Валюта</DataPath>
+									<ContextMenu name="НачальныйОстатокВалютаКонтекстноеМеню" id="271"/>
+									<ExtendedTooltip name="НачальныйОстатокВалютаРасширеннаяПодсказка" id="272"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокПодразделения" id="273">
+									<DataPath>НачальныйОстаток.Подразделения</DataPath>
+									<ContextMenu name="НачальныйОстатокПодразделенияКонтекстноеМеню" id="274"/>
+									<ExtendedTooltip name="НачальныйОстатокПодразделенияРасширеннаяПодсказка" id="275"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокКассы" id="276">
+									<DataPath>НачальныйОстаток.Кассы</DataPath>
+									<ContextMenu name="НачальныйОстатокКассыКонтекстноеМеню" id="277"/>
+									<ExtendedTooltip name="НачальныйОстатокКассыРасширеннаяПодсказка" id="278"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокБанковскиеСчета" id="279">
+									<DataPath>НачальныйОстаток.БанковскиеСчета</DataPath>
+									<ContextMenu name="НачальныйОстатокБанковскиеСчетаКонтекстноеМеню" id="280"/>
+									<ExtendedTooltip name="НачальныйОстатокБанковскиеСчетаРасширеннаяПодсказка" id="281"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокКонтрагенты" id="282">
+									<DataPath>НачальныйОстаток.Контрагенты</DataPath>
+									<ContextMenu name="НачальныйОстатокКонтрагентыКонтекстноеМеню" id="283"/>
+									<ExtendedTooltip name="НачальныйОстатокКонтрагентыРасширеннаяПодсказка" id="284"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокДоговоры" id="285">
+									<DataPath>НачальныйОстаток.Договоры</DataPath>
+									<ContextMenu name="НачальныйОстатокДоговорыКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="НачальныйОстатокДоговорыРасширеннаяПодсказка" id="287"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокНоменклатура" id="288">
+									<DataPath>НачальныйОстаток.Номенклатура</DataPath>
+									<ContextMenu name="НачальныйОстатокНоменклатураКонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="НачальныйОстатокНоменклатураРасширеннаяПодсказка" id="290"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСклады" id="291">
+									<DataPath>НачальныйОстаток.Склады</DataPath>
+									<ContextMenu name="НачальныйОстатокСкладыКонтекстноеМеню" id="292"/>
+									<ExtendedTooltip name="НачальныйОстатокСкладыРасширеннаяПодсказка" id="293"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокЦенныеБумаги" id="294">
+									<DataPath>НачальныйОстаток.ЦенныеБумаги</DataPath>
+									<ContextMenu name="НачальныйОстатокЦенныеБумагиКонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="НачальныйОстатокЦенныеБумагиРасширеннаяПодсказка" id="296"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокРасходыБудущихПериодов" id="297">
+									<DataPath>НачальныйОстаток.РасходыБудущихПериодов</DataPath>
+									<ContextMenu name="НачальныйОстатокРасходыБудущихПериодовКонтекстноеМеню" id="298"/>
+									<ExtendedTooltip name="НачальныйОстатокРасходыБудущихПериодовРасширеннаяПодсказка" id="299"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокДоходыБудущихПериодов" id="300">
+									<DataPath>НачальныйОстаток.ДоходыБудущихПериодов</DataPath>
+									<ContextMenu name="НачальныйОстатокДоходыБудущихПериодовКонтекстноеМеню" id="301"/>
+									<ExtendedTooltip name="НачальныйОстатокДоходыБудущихПериодовРасширеннаяПодсказка" id="302"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСтатьиДоходов" id="303">
+									<DataPath>НачальныйОстаток.СтатьиДоходов</DataPath>
+									<ContextMenu name="НачальныйОстатокСтатьиДоходовКонтекстноеМеню" id="304"/>
+									<ExtendedTooltip name="НачальныйОстатокСтатьиДоходовРасширеннаяПодсказка" id="305"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСтатьиЗатрат" id="306">
+									<DataPath>НачальныйОстаток.СтатьиЗатрат</DataPath>
+									<ContextMenu name="НачальныйОстатокСтатьиЗатратКонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="НачальныйОстатокСтатьиЗатратРасширеннаяПодсказка" id="308"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСтатьиДвиженияДенежныхСредств" id="309">
+									<DataPath>НачальныйОстаток.СтатьиДвиженияДенежныхСредств</DataPath>
+									<ContextMenu name="НачальныйОстатокСтатьиДвиженияДенежныхСредствКонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="НачальныйОстатокСтатьиДвиженияДенежныхСредствРасширеннаяПодсказка" id="311"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокОсновныеСредства" id="312">
+									<DataPath>НачальныйОстаток.ОсновныеСредства</DataPath>
+									<ContextMenu name="НачальныйОстатокОсновныеСредстваКонтекстноеМеню" id="313"/>
+									<ExtendedTooltip name="НачальныйОстатокОсновныеСредстваРасширеннаяПодсказка" id="314"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокНематериальныеАктивы" id="315">
+									<DataPath>НачальныйОстаток.НематериальныеАктивы</DataPath>
+									<ContextMenu name="НачальныйОстатокНематериальныеАктивыКонтекстноеМеню" id="316"/>
+									<ExtendedTooltip name="НачальныйОстатокНематериальныеАктивыРасширеннаяПодсказка" id="317"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокОбъектыСтроительства" id="318">
+									<DataPath>НачальныйОстаток.ОбъектыСтроительства</DataPath>
+									<ContextMenu name="НачальныйОстатокОбъектыСтроительстваКонтекстноеМеню" id="319"/>
+									<ExtendedTooltip name="НачальныйОстатокОбъектыСтроительстваРасширеннаяПодсказка" id="320"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокНоменклатурныеГруппы" id="321">
+									<DataPath>НачальныйОстаток.НоменклатурныеГруппы</DataPath>
+									<ContextMenu name="НачальныйОстатокНоменклатурныеГруппыКонтекстноеМеню" id="322"/>
+									<ExtendedTooltip name="НачальныйОстатокНоменклатурныеГруппыРасширеннаяПодсказка" id="323"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСумма" id="324">
+									<DataPath>НачальныйОстаток.Сумма</DataPath>
+									<ContextMenu name="НачальныйОстатокСуммаКонтекстноеМеню" id="325"/>
+									<ExtendedTooltip name="НачальныйОстатокСуммаРасширеннаяПодсказка" id="326"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСуммаВал" id="327">
+									<DataPath>НачальныйОстаток.СуммаВал</DataPath>
+									<ContextMenu name="НачальныйОстатокСуммаВалКонтекстноеМеню" id="328"/>
+									<ExtendedTooltip name="НачальныйОстатокСуммаВалРасширеннаяПодсказка" id="329"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокСуммаУпр" id="330">
+									<DataPath>НачальныйОстаток.СуммаУпр</DataPath>
+									<ContextMenu name="НачальныйОстатокСуммаУпрКонтекстноеМеню" id="331"/>
+									<ExtendedTooltip name="НачальныйОстатокСуммаУпрРасширеннаяПодсказка" id="332"/>
+								</LabelField>
+								<LabelField name="НачальныйОстатокКоличество" id="333">
+									<DataPath>НачальныйОстаток.Количество</DataPath>
+									<ContextMenu name="НачальныйОстатокКоличествоКонтекстноеМеню" id="334"/>
+									<ExtendedTooltip name="НачальныйОстатокКоличествоРасширеннаяПодсказка" id="335"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбороты" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обороты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обороты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОборотыРасширеннаяПодсказка" id="132"/>
+					<ChildItems>
+						<Table name="Обороты" id="133">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Обороты</DataPath>
+							<RowPictureDataPath>Обороты.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ОборотыКонтекстноеМеню" id="134"/>
+							<AutoCommandBar name="ОборотыКоманднаяПанель" id="135"/>
+							<ExtendedTooltip name="ОборотыРасширеннаяПодсказка" id="136"/>
+							<SearchStringAddition name="ОборотыСтрокаПоиска" id="137">
+								<AdditionSource>
+									<Item>Обороты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОборотыСтрокаПоискаКонтекстноеМеню" id="138"/>
+								<ExtendedTooltip name="ОборотыСтрокаПоискаРасширеннаяПодсказка" id="139"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОборотыСостояниеПросмотра" id="140">
+								<AdditionSource>
+									<Item>Обороты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОборотыСостояниеПросмотраКонтекстноеМеню" id="141"/>
+								<ExtendedTooltip name="ОборотыСостояниеПросмотраРасширеннаяПодсказка" id="142"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОборотыУправлениеПоиском" id="143">
+								<AdditionSource>
+									<Item>Обороты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОборотыУправлениеПоискомКонтекстноеМеню" id="144"/>
+								<ExtendedTooltip name="ОборотыУправлениеПоискомРасширеннаяПодсказка" id="145"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОборотыПериод" id="146">
+									<DataPath>Обороты.Period</DataPath>
+									<ContextMenu name="ОборотыПериодКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ОборотыПериодРасширеннаяПодсказка" id="148"/>
+								</LabelField>
+								<LabelField name="ОборотыНомерСтроки" id="152">
+									<DataPath>Обороты.LineNumber</DataPath>
+									<ContextMenu name="ОборотыНомерСтрокиКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="ОборотыНомерСтрокиРасширеннаяПодсказка" id="154"/>
+								</LabelField>
+								<LabelField name="ОборотыБаза" id="155">
+									<DataPath>Обороты.База</DataPath>
+									<ContextMenu name="ОборотыБазаКонтекстноеМеню" id="156"/>
+									<ExtendedTooltip name="ОборотыБазаРасширеннаяПодсказка" id="157"/>
+								</LabelField>
+								<LabelField name="ОборотыОрганизация" id="158">
+									<DataPath>Обороты.Организация</DataPath>
+									<ContextMenu name="ОборотыОрганизацияКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="ОборотыОрганизацияРасширеннаяПодсказка" id="160"/>
+								</LabelField>
+								<LabelField name="ОборотыТипОборота" id="161">
+									<DataPath>Обороты.ТипОборота</DataPath>
+									<ContextMenu name="ОборотыТипОборотаКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="ОборотыТипОборотаРасширеннаяПодсказка" id="163"/>
+								</LabelField>
+								<LabelField name="ОборотыСчет" id="164">
+									<DataPath>Обороты.Счет</DataPath>
+									<ContextMenu name="ОборотыСчетКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="ОборотыСчетРасширеннаяПодсказка" id="166"/>
+								</LabelField>
+								<LabelField name="ОборотыВалюта" id="167">
+									<DataPath>Обороты.Валюта</DataPath>
+									<ContextMenu name="ОборотыВалютаКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="ОборотыВалютаРасширеннаяПодсказка" id="169"/>
+								</LabelField>
+								<LabelField name="ОборотыПодразделения" id="170">
+									<DataPath>Обороты.Подразделения</DataPath>
+									<ContextMenu name="ОборотыПодразделенияКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="ОборотыПодразделенияРасширеннаяПодсказка" id="172"/>
+								</LabelField>
+								<LabelField name="ОборотыКассы" id="173">
+									<DataPath>Обороты.Кассы</DataPath>
+									<ContextMenu name="ОборотыКассыКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="ОборотыКассыРасширеннаяПодсказка" id="175"/>
+								</LabelField>
+								<LabelField name="ОборотыБанковскиеСчета" id="176">
+									<DataPath>Обороты.БанковскиеСчета</DataPath>
+									<ContextMenu name="ОборотыБанковскиеСчетаКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="ОборотыБанковскиеСчетаРасширеннаяПодсказка" id="178"/>
+								</LabelField>
+								<LabelField name="ОборотыКонтрагенты" id="179">
+									<DataPath>Обороты.Контрагенты</DataPath>
+									<ContextMenu name="ОборотыКонтрагентыКонтекстноеМеню" id="180"/>
+									<ExtendedTooltip name="ОборотыКонтрагентыРасширеннаяПодсказка" id="181"/>
+								</LabelField>
+								<LabelField name="ОборотыДоговоры" id="182">
+									<DataPath>Обороты.Договоры</DataPath>
+									<ContextMenu name="ОборотыДоговорыКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="ОборотыДоговорыРасширеннаяПодсказка" id="184"/>
+								</LabelField>
+								<LabelField name="ОборотыНоменклатура" id="185">
+									<DataPath>Обороты.Номенклатура</DataPath>
+									<ContextMenu name="ОборотыНоменклатураКонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="ОборотыНоменклатураРасширеннаяПодсказка" id="187"/>
+								</LabelField>
+								<LabelField name="ОборотыСклады" id="188">
+									<DataPath>Обороты.Склады</DataPath>
+									<ContextMenu name="ОборотыСкладыКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="ОборотыСкладыРасширеннаяПодсказка" id="190"/>
+								</LabelField>
+								<LabelField name="ОборотыЦенныеБумаги" id="191">
+									<DataPath>Обороты.ЦенныеБумаги</DataPath>
+									<ContextMenu name="ОборотыЦенныеБумагиКонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="ОборотыЦенныеБумагиРасширеннаяПодсказка" id="193"/>
+								</LabelField>
+								<LabelField name="ОборотыРасходыБудущихПериодов" id="194">
+									<DataPath>Обороты.РасходыБудущихПериодов</DataPath>
+									<ContextMenu name="ОборотыРасходыБудущихПериодовКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="ОборотыРасходыБудущихПериодовРасширеннаяПодсказка" id="196"/>
+								</LabelField>
+								<LabelField name="ОборотыДоходыБудущихПериодов" id="197">
+									<DataPath>Обороты.ДоходыБудущихПериодов</DataPath>
+									<ContextMenu name="ОборотыДоходыБудущихПериодовКонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="ОборотыДоходыБудущихПериодовРасширеннаяПодсказка" id="199"/>
+								</LabelField>
+								<LabelField name="ОборотыСтатьиДоходов" id="200">
+									<DataPath>Обороты.СтатьиДоходов</DataPath>
+									<ContextMenu name="ОборотыСтатьиДоходовКонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="ОборотыСтатьиДоходовРасширеннаяПодсказка" id="202"/>
+								</LabelField>
+								<LabelField name="ОборотыСтатьиЗатрат" id="203">
+									<DataPath>Обороты.СтатьиЗатрат</DataPath>
+									<ContextMenu name="ОборотыСтатьиЗатратКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="ОборотыСтатьиЗатратРасширеннаяПодсказка" id="205"/>
+								</LabelField>
+								<LabelField name="ОборотыСтатьиДвиженияДенежныхСредств" id="206">
+									<DataPath>Обороты.СтатьиДвиженияДенежныхСредств</DataPath>
+									<ContextMenu name="ОборотыСтатьиДвиженияДенежныхСредствКонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="ОборотыСтатьиДвиженияДенежныхСредствРасширеннаяПодсказка" id="208"/>
+								</LabelField>
+								<LabelField name="ОборотыОсновныеСредства" id="209">
+									<DataPath>Обороты.ОсновныеСредства</DataPath>
+									<ContextMenu name="ОборотыОсновныеСредстваКонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="ОборотыОсновныеСредстваРасширеннаяПодсказка" id="211"/>
+								</LabelField>
+								<LabelField name="ОборотыНематериальныеАктивы" id="212">
+									<DataPath>Обороты.НематериальныеАктивы</DataPath>
+									<ContextMenu name="ОборотыНематериальныеАктивыКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="ОборотыНематериальныеАктивыРасширеннаяПодсказка" id="214"/>
+								</LabelField>
+								<LabelField name="ОборотыОбъектыСтроительства" id="215">
+									<DataPath>Обороты.ОбъектыСтроительства</DataPath>
+									<ContextMenu name="ОборотыОбъектыСтроительстваКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="ОборотыОбъектыСтроительстваРасширеннаяПодсказка" id="217"/>
+								</LabelField>
+								<LabelField name="ОборотыНоменклатурныеГруппы" id="218">
+									<DataPath>Обороты.НоменклатурныеГруппы</DataPath>
+									<ContextMenu name="ОборотыНоменклатурныеГруппыКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="ОборотыНоменклатурныеГруппыРасширеннаяПодсказка" id="220"/>
+								</LabelField>
+								<LabelField name="ОборотыСумма" id="221">
+									<DataPath>Обороты.Сумма</DataPath>
+									<ContextMenu name="ОборотыСуммаКонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="ОборотыСуммаРасширеннаяПодсказка" id="223"/>
+								</LabelField>
+								<LabelField name="ОборотыСуммаВал" id="224">
+									<DataPath>Обороты.СуммаВал</DataPath>
+									<ContextMenu name="ОборотыСуммаВалКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ОборотыСуммаВалРасширеннаяПодсказка" id="226"/>
+								</LabelField>
+								<LabelField name="ОборотыСуммаУпр" id="227">
+									<DataPath>Обороты.СуммаУпр</DataPath>
+									<ContextMenu name="ОборотыСуммаУпрКонтекстноеМеню" id="228"/>
+									<ExtendedTooltip name="ОборотыСуммаУпрРасширеннаяПодсказка" id="229"/>
+								</LabelField>
+								<LabelField name="ОборотыКоличество" id="230">
+									<DataPath>Обороты.Количество</DataPath>
+									<ContextMenu name="ОборотыКоличествоКонтекстноеМеню" id="231"/>
+									<ExtendedTooltip name="ОборотыКоличествоРасширеннаяПодсказка" id="232"/>
+								</LabelField>
+								<LabelField name="ОборотыТипРегистратора" id="233">
+									<DataPath>Обороты.ТипРегистратора</DataPath>
+									<ContextMenu name="ОборотыТипРегистратораКонтекстноеМеню" id="234"/>
+									<ExtendedTooltip name="ОборотыТипРегистратораРасширеннаяПодсказка" id="235"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.КорректировкаЗаписейРегистров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="НачальныйОстаток" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальный остаток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.НачальныйОстаток</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Обороты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.Обороты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьОстаток" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить остаток</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить остаток</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьОстаток</Action>
+		</Command>
+		<Command name="ЗагрузитьОбороты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить обороты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить обороты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьОбороты</Action>
+		</Command>
+	</Commands>
+</Form>

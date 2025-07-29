@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="12bf7ee9-282a-49f7-a4d5-49dbdc101180">
+		<Name>ОбменЭталонов</Name>
+		<Code/>
+		<Description>Обмен эталонов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="44ee918c-aa0d-4867-863a-aa796724f863">
+		<Name>Основной</Name>
+		<Code/>
+		<Description>Основной</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

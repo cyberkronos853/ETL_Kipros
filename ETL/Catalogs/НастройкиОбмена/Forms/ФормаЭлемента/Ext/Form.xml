@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="28">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа9" id="67">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<Page name="Группа10" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>FTP</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<CheckBoxField name="ЗагрузкаИзFTP" id="99">
+							<DataPath>Объект.ЗагрузкаИзFTP</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗагрузкаИзFTPКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ЗагрузкаИзFTPРасширеннаяПодсказка" id="101"/>
+							<Events>
+								<Event name="OnChange">ЗагрузкаИзFTPПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="Группа2" id="30">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<UsualGroup name="Группа6" id="38">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="39"/>
+									<ChildItems>
+										<InputField name="АдресFTP" id="13">
+											<DataPath>Объект.АдресFTP</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="АдресFTPКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="АдресFTPРасширеннаяПодсказка" id="15"/>
+										</InputField>
+										<InputField name="Порт" id="40">
+											<DataPath>Объект.Порт</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<ContextMenu name="ПортКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="42"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="32">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="33"/>
+									<ChildItems>
+										<InputField name="Логин" id="7">
+											<DataPath>Объект.Логин</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ЛогинКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="9"/>
+										</InputField>
+										<InputField name="Пароль" id="10">
+											<DataPath>Объект.Пароль</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="ПарольКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="12"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа12" id="76">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="77"/>
+									<ChildItems>
+										<InputField name="КаталогFTP" id="73">
+											<DataPath>Объект.КаталогFTP</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="КаталогFTPКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="КаталогFTPРасширеннаяПодсказка" id="75"/>
+										</InputField>
+										<CheckBoxField name="УдалятьФайлыПослеСкачивания" id="78">
+											<DataPath>Объект.УдалятьФайлыПослеСкачивания</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="УдалятьФайлыПослеСкачиванияКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="УдалятьФайлыПослеСкачиванияРасширеннаяПодсказка" id="80"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПассивноеСоединение" id="81">
+											<DataPath>Объект.ПассивноеСоединение</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПассивноеСоединениеКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="ПассивноеСоединениеРасширеннаяПодсказка" id="83"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа4" id="34">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<InputField name="СрокХраненияДанных" id="16">
+									<DataPath>Объект.СрокХраненияДанных</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СрокХраненияДанныхКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="СрокХраненияДанныхРасширеннаяПодсказка" id="18"/>
+								</InputField>
+								<InputField name="КоличествоПотоков" id="19">
+									<DataPath>Объект.КоличествоПотоков</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КоличествоПотоковКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="КоличествоПотоковРасширеннаяПодсказка" id="21"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа11" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>SQL</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаSQL" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки SQL</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа SQL</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаSQLРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<InputField name="bcpSQL" id="61">
+									<DataPath>Объект.bcpSQL</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="bcpSQLКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="bcpSQLРасширеннаяПодсказка" id="63"/>
+									<Events>
+										<Event name="StartChoice">bcpSQLНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="Группа8" id="56">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="57"/>
+									<ChildItems>
+										<InputField name="ИнстансSQL" id="45">
+											<DataPath>Объект.ИнстансSQL</DataPath>
+											<ContextMenu name="ИнстансSQLКонтекстноеМеню" id="46"/>
+											<ExtendedTooltip name="ИнстансSQLРасширеннаяПодсказка" id="47"/>
+										</InputField>
+										<InputField name="БазаДанныхSQL" id="58">
+											<DataPath>Объект.БазаДанныхSQL</DataPath>
+											<ContextMenu name="БазаДанныхSQLКонтекстноеМеню" id="59"/>
+											<ExtendedTooltip name="БазаДанныхSQLРасширеннаяПодсказка" id="60"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа7" id="48">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="49"/>
+									<ChildItems>
+										<InputField name="ЛогинSQL" id="50">
+											<DataPath>Объект.ЛогинSQL</DataPath>
+											<ContextMenu name="ЛогинSQLКонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="ЛогинSQLРасширеннаяПодсказка" id="52"/>
+										</InputField>
+										<InputField name="ПарольSQL" id="53">
+											<DataPath>Объект.ПарольSQL</DataPath>
+											<ContextMenu name="ПарольSQLКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="ПарольSQLРасширеннаяПодсказка" id="55"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="КаталогОшибокSQL" id="64">
+									<DataPath>Объект.КаталогОшибокSQL</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="КаталогОшибокSQLКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="КаталогОшибокSQLРасширеннаяПодсказка" id="66"/>
+									<Events>
+										<Event name="StartChoice">КаталогОшибокSQLНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа14" id="89">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки каталогов</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="90"/>
+					<ChildItems>
+						<UsualGroup name="Группа13" id="91">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<InputField name="ПутьККаталогуАрхива" id="84">
+									<DataPath>Объект.ПутьККаталогуАрхива</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПутьККаталогуАрхиваКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ПутьККаталогуАрхиваРасширеннаяПодсказка" id="86"/>
+									<Events>
+										<Event name="StartChoice">ПутьККаталогуАрхиваНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="СрокХраненияАрхива" id="93">
+									<DataPath>Объект.СрокХраненияАрхива</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок хранения архивов (дни)</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<MultiLine>false</MultiLine>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="СрокХраненияАрхиваКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="СрокХраненияАрхиваРасширеннаяПодсказка" id="95"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа5" id="36">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="37"/>
+							<ChildItems>
+								<InputField name="ПутьККаталогуОтчётов" id="96">
+									<DataPath>Объект.ПутьККаталогуОтчётов</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПутьККаталогуОтчётовКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ПутьККаталогуОтчётовРасширеннаяПодсказка" id="98"/>
+									<Events>
+										<Event name="StartChoice">ПутьККаталогуОтчётовНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПутьККаталогуХраненияФайловОбмена" id="22">
+									<DataPath>Объект.ПутьККаталогуХраненияФайловОбмена</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПутьККаталогуХраненияФайловОбменаКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ПутьККаталогуХраненияФайловОбменаРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="StartChoice">ПутьККаталогуХраненияФайловОбменаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПутьККаталогуЗагрузкиФайлов" id="25">
+									<DataPath>Объект.ПутьККаталогуЗагрузкиФайлов</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПутьККаталогуЗагрузкиФайловКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ПутьККаталогуЗагрузкиФайловРасширеннаяПодсказка" id="27"/>
+									<Events>
+										<Event name="StartChoice">ПутьККаталогуЗагрузкиФайловНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="WEB" id="102">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WEB</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WEB</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="WEBРасширеннаяПодсказка" id="103"/>
+					<ChildItems>
+						<InputField name="кибВебСервис" id="104">
+							<DataPath>Объект.WebСервис</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="кибВебСервисКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="кибВебСервисРасширеннаяПодсказка" id="106"/>
+						</InputField>
+						<InputField name="ЛогинWeb" id="107">
+							<DataPath>Объект.Логин</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЛогинWebКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="ЛогинWebРасширеннаяПодсказка" id="109"/>
+						</InputField>
+						<InputField name="ПарольWeb" id="110">
+							<DataPath>Объект.Пароль</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПарольWebКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ПарольWebРасширеннаяПодсказка" id="112"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НастройкиОбмена</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

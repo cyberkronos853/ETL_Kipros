@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="66d8eb0e-68bd-42d2-9f42-e179e67b2e54">
+		<Name>БухгалтерияДляКазахстана</Name>
+		<Code>0000000001</Code>
+		<Description>Бухгалтерия для казахстана</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="52c3a3ed-5830-4813-8295-ff5012af5225">
+		<Name>ЗарплатаИКадрыДляКазахстана</Name>
+		<Code>0000000003</Code>
+		<Description>Зарплата и кадры для казахстана</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0d6134d5-448b-4b3d-ba85-1ccf364a3812">
+		<Name>ТорговляДляКазахстана</Name>
+		<Code>0000000002</Code>
+		<Description>Торговля для казахстана</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

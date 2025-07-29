@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновить" id="19">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать файл и сравнить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПанельНастроек" id="4">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные отбора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа панель настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные отбора...</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<BackColor>style:NavigationColor</BackColor>
+			<ExtendedTooltip name="ГруппаПанельНастроекРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПериод" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<InputField name="Период" id="77">
+							<DataPath>Период</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="79"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="БазаСсылка" id="21">
+					<DataPath>Объект.БазаСсылка</DataPath>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="БазаСсылкаКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="БазаСсылкаРасширеннаяПодсказка" id="23"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницыФормы" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<ExtendedTooltip name="ГруппаСтраницыФормыРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаИнициализированныеДанные" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница инициализированные данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаИнициализированныеДанныеРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<Pages name="ГруппаДинамическиеСтраницы" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Динамические страницы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа динамические страницы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаДинамическиеСтраницыРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<Page name="ГруппаСтраницаОсновная" id="26">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа страница основная</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ExtendedTooltip name="ГруппаСтраницаОсновнаяРасширеннаяПодсказка" id="27"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация1" id="28">
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Данные отсутствуют, нажмите "Обновить" для заполнения</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="30"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаСтраницаДанные" id="60">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа страница периоды</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа страница данные</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСтраницаДанныеРасширеннаяПодсказка" id="61"/>
+									<ChildItems>
+										<Pages name="ГруппаСтраницы_тдПериоды" id="65">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страницы периоды</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страницы тд периоды</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>TabsOnTop</PagesRepresentation>
+											<ExtendedTooltip name="ГруппаСтраницы_тдПериодыРасширеннаяПодсказка" id="66"/>
+										</Pages>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаНастройки" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаНастройкиРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПользовательскиеНастройки" id="70">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользовательские настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользовательские настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаПользовательскиеНастройкиРасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаАдминистративныеНастройки" id="75">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа административные настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа административные настройки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаАдминистративныеНастройкиРасширеннаяПодсказка" id="76"/>
+									<ChildItems>
+										<InputField name="СпособИдентификацииДанныхXLS" id="67">
+											<DataPath>СпособИдентификацииДанныхXLS</DataPath>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Автоматически</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Вручную</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="СпособИдентификацииДанныхXLSКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="СпособИдентификацииДанныхXLSРасширеннаяПодсказка" id="69"/>
+											<Events>
+												<Event name="OnChange">СпособИдентификацииДанныхXLSПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ТипЗапросаПериода" id="1">
+											<DataPath>Объект.ТипЗапросаПериода</DataPath>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Общий период</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По периодам  XLS-файлов</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипЗапросаПериодаКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="ТипЗапросаПериодаРасширеннаяПодсказка" id="3"/>
+											<Events>
+												<Event name="OnChange">ТипЗапросаПериодаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<CheckBoxField name="ТолькоОшибочные" id="62">
+									<DataPath>Объект.ТолькоОшибочные</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТолькоОшибочныеКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ТолькоОшибочныеРасширеннаяПодсказка" id="64"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ЗаписыватьРезультатыСверки" id="72">
+							<DataPath>Объект.ЗаписыватьРезультатыСверки</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗаписыватьРезультатыСверкиКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ЗаписыватьРезультатыСверкиРасширеннаяПодсказка" id="74"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтрольДанныхОСВ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.БазаСсылка</Field>
+				<Field>Объект.ЗаписыватьРезультатыСверки</Field>
+				<Field>Объект.ТипЗапросаПериода</Field>
+				<Field>Объект.ТолькоОшибочные</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДатаНачала" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ДатаНачала</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДатаОкончания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ДатаОкончания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СпособИдентификацииДанныхXLS" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ идентификации данных XLS</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>СпособИдентификацииДанныхXLS</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Период" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьПериод" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldSelect</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьПериод</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
+</Form>

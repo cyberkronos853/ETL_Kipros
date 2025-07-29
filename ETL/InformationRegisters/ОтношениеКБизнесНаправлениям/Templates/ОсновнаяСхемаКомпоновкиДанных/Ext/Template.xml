@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяПредопределенныхДанных</dataPath>
+			<field>ИмяПредопределенныхДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.Предопределенное</dataPath>
+			<field>ВидыСубконто.Предопределенное</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Забалансовый</dataPath>
+			<field>Забалансовый</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порядок</dataPath>
+			<field>Порядок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вид</dataPath>
+			<field>Вид</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ВидыСубконто</dataPath>
+			<field>ВидыСубконто</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗапретитьИспользоватьВПроводках</dataPath>
+			<field>ЗапретитьИспользоватьВПроводках</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.Валютный</dataPath>
+			<field>ВидыСубконто.Валютный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетНУ</dataPath>
+			<field>СчетНУ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валютный</dataPath>
+			<field>Валютный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количественный</dataPath>
+			<field>Количественный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.Ссылка</dataPath>
+			<field>ВидыСубконто.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.НомерСтроки</dataPath>
+			<field>ВидыСубконто.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.ВидСубконто</dataPath>
+			<field>ВидыСубконто.ВидСубконто</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.ТолькоОбороты</dataPath>
+			<field>ВидыСубконто.ТолькоОбороты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.Суммовой</dataPath>
+			<field>ВидыСубконто.Суммовой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидыСубконто.Количественный</dataPath>
+			<field>ВидыСубконто.Количественный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Предопределенный</dataPath>
+			<field>Предопределенный</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Типовой.Ссылка КАК Ссылка,
+	Типовой.ВерсияДанных КАК ВерсияДанных,
+	Типовой.ПометкаУдаления КАК ПометкаУдаления,
+	Типовой.Родитель КАК Родитель,
+	Типовой.Код КАК Код,
+	Типовой.Наименование КАК Наименование,
+	Типовой.Порядок КАК Порядок,
+	Типовой.Вид КАК Вид,
+	Типовой.Забалансовый КАК Забалансовый,
+	Типовой.ЗапретитьИспользоватьВПроводках КАК ЗапретитьИспользоватьВПроводках,
+	Типовой.СчетНУ КАК СчетНУ,
+	Типовой.Комментарий КАК Комментарий,
+	Типовой.Валютный КАК Валютный,
+	Типовой.Количественный КАК Количественный,
+	Типовой.ВидыСубконто.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		ВидСубконто КАК ВидСубконто,
+		Предопределенное КАК Предопределенное,
+		ТолькоОбороты КАК ТолькоОбороты,
+		Суммовой КАК Суммовой,
+		Валютный КАК Валютный,
+		Количественный КАК Количественный
+	) КАК ВидыСубконто,
+	Типовой.Предопределенный КАК Предопределенный,
+	Типовой.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+ИЗ
+	ПланСчетов.Типовой КАК Типовой</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>ПродажиПоНоменклатурнымГруппам</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Продажи по номенклатурным группам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="xs:string">Выделять отрицательные</dcsset:presentation>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>АвтоОтступ</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уменьшенный автоотступ</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Основной</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ПродажиПоКонтрагентам</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Продажи по контрагентам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ПродажиПоКонтрагентамПоОплате</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Продажи по контрагентам (по оплате)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

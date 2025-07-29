@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ТипЭталона" id="1">
+			<DataPath>Объект.ТипЭталона</DataPath>
+			<ContextMenu name="ТипЭталонаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТипЭталонаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ТаблицаИсточник" id="4">
+			<DataPath>Объект.ТаблицаИсточник</DataPath>
+			<ContextMenu name="ТаблицаИсточникКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТаблицаИсточникРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="Данные" id="7">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Данные</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ДанныеКоманднаяПанель" id="9">
+				<ChildItems>
+					<Button name="ДанныеЗагрузитьДанные" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьДанные</CommandName>
+						<ExtendedTooltip name="ДанныеЗагрузитьДанныеРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ДанныеЗаписатьСоответствия" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаписатьСоответствия</CommandName>
+						<ExtendedTooltip name="ДанныеЗаписатьСоответствияРасширеннаяПодсказка" id="35"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДанныеРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ДанныеСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Данные</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДанныеСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Данные</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ДанныеСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Данные</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ДанныеУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДанныеНомерСтроки" id="20">
+					<DataPath>Объект.Данные.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДанныеНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ДанныеБаза" id="23">
+					<DataPath>Объект.Данные.База</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеБазаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДанныеБазаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ДанныеGUID" id="26">
+					<DataPath>Объект.Данные.GUID</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеGUIDКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДанныеGUIDРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДанныеЭталон" id="29">
+					<DataPath>Объект.Данные.Эталон</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеЭталонКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДанныеЭталонРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДанныеПредставление" id="36">
+					<DataPath>Объект.Данные.Представление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеПредставлениеКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ДанныеПредставлениеРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаСоответствий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеИзФайла</Action>
+		</Command>
+		<Command name="ЗаписатьСоответствия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать соответствия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать соответствия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьСоответствия</Action>
+		</Command>
+	</Commands>
+</Form>

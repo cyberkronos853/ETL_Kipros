@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ВидТаблицы" id="4">
+			<DataPath>Объект.ВидТаблицы</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидТаблицыКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВидТаблицыРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<CheckBoxField name="ЕстьВременнаяТаблица" id="7">
+			<DataPath>Объект.ЕстьВременнаяТаблица</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЕстьВременнаяТаблицаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЕстьВременнаяТаблицаРасширеннаяПодсказка" id="9"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЭтоВременнаяТаблица" id="10">
+			<DataPath>Объект.ЭтоВременнаяТаблица</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЭтоВременнаяТаблицаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЭтоВременнаяТаблицаРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<InputField name="ОсновнаяТаблица" id="13">
+			<DataPath>Объект.ОсновнаяТаблица</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОсновнаяТаблицаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОсновнаяТаблицаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="ЕстьРегистратор" id="16">
+			<DataPath>Объект.ЕстьРегистратор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЕстьРегистраторКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЕстьРегистраторРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЕстьТаблицаИтогов" id="95">
+			<DataPath>Объект.ЕстьТаблицаИтогов</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЕстьТаблицаИтоговКонтекстноеМеню" id="96"/>
+			<ExtendedTooltip name="ЕстьТаблицаИтоговРасширеннаяПодсказка" id="97"/>
+			<Events>
+				<Event name="OnChange">ЕстьТаблицаИтоговПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<CheckBoxField name="НеЗаполнятьАвтоматически" id="19">
+			<DataPath>Объект.НеЗаполнятьАвтоматически</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеЗаполнятьАвтоматическиКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НеЗаполнятьАвтоматическиРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<InputField name="Синоним" id="22">
+			<DataPath>Объект.Синоним</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СинонимКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СинонимРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Пояснение" id="25">
+			<DataPath>Объект.Пояснение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<Pages name="Страницы" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="ГруппаСтруктураТаблицыSQL" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структура таблицы SQL</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСтруктураТаблицыSQLРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Table name="СтруктураТаблицыSQL" id="32">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СтруктураТаблицыSQL</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтруктураТаблицыSQLКонтекстноеМеню" id="33"/>
+							<AutoCommandBar name="СтруктураТаблицыSQLКоманднаяПанель" id="34">
+								<ChildItems>
+									<Button name="СтруктураТаблицыSQLЗаполнитьИзМакета" id="93">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьИзМакета</CommandName>
+										<ExtendedTooltip name="СтруктураТаблицыSQLЗаполнитьИзМакетаРасширеннаяПодсказка" id="94"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СтруктураТаблицыSQLРасширеннаяПодсказка" id="35"/>
+							<SearchStringAddition name="СтруктураТаблицыSQLСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>СтруктураТаблицыSQL</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТаблицыSQLСтрокаПоискаКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="СтруктураТаблицыSQLСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтруктураТаблицыSQLСостояниеПросмотра" id="39">
+								<AdditionSource>
+									<Item>СтруктураТаблицыSQL</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТаблицыSQLСостояниеПросмотраКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="СтруктураТаблицыSQLСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтруктураТаблицыSQLУправлениеПоиском" id="42">
+								<AdditionSource>
+									<Item>СтруктураТаблицыSQL</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТаблицыSQLУправлениеПоискомКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="СтруктураТаблицыSQLУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СтруктураТаблицыSQLНомерСтроки" id="45">
+									<DataPath>Объект.СтруктураТаблицыSQL.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLНомерСтрокиКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLНомерСтрокиРасширеннаяПодсказка" id="47"/>
+								</LabelField>
+								<InputField name="СтруктураТаблицыSQLКлючСвязи" id="104">
+									<DataPath>Объект.СтруктураТаблицыSQL.КлючСвязи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтруктураТаблицыSQLКлючСвязиКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLКлючСвязиРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="СтруктураТаблицыSQLИмяПоля" id="48">
+									<DataPath>Объект.СтруктураТаблицыSQL.ИмяПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLИмяПоляКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLИмяПоляРасширеннаяПодсказка" id="50"/>
+								</InputField>
+								<InputField name="СтруктураТаблицыSQLИмяПоляSQL" id="51">
+									<DataPath>Объект.СтруктураТаблицыSQL.ИмяПоляSQL</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLИмяПоляSQLКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLИмяПоляSQLРасширеннаяПодсказка" id="53"/>
+								</InputField>
+								<InputField name="СтруктураТаблицыSQLТипПоля" id="54">
+									<DataPath>Объект.СтруктураТаблицыSQL.ТипПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLТипПоляКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLТипПоляРасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<CheckBoxField name="СтруктураТаблицыSQLИндекс" id="57">
+									<DataPath>Объект.СтруктураТаблицыSQL.Индекс</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтруктураТаблицыSQLИндексКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLИндексРасширеннаяПодсказка" id="59"/>
+								</CheckBoxField>
+								<CheckBoxField name="СтруктураТаблицыSQLИзмерение" id="60">
+									<DataPath>Объект.СтруктураТаблицыSQL.Измерение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтруктураТаблицыSQLИзмерениеКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLИзмерениеРасширеннаяПодсказка" id="62"/>
+								</CheckBoxField>
+								<CheckBoxField name="СтруктураТаблицыSQLКонтроль" id="63">
+									<DataPath>Объект.СтруктураТаблицыSQL.Контроль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтруктураТаблицыSQLКонтрольКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLКонтрольРасширеннаяПодсказка" id="65"/>
+								</CheckBoxField>
+								<CheckBoxField name="СтруктураТаблицыSQLИтогиИзмерение" id="98">
+									<DataPath>Объект.СтруктураТаблицыSQL.ИтогиИзмерение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтруктураТаблицыSQLИтогиИзмерениеКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLИтогиИзмерениеРасширеннаяПодсказка" id="100"/>
+								</CheckBoxField>
+								<CheckBoxField name="СтруктураТаблицыSQLИтогиРесурс" id="101">
+									<DataPath>Объект.СтруктураТаблицыSQL.ИтогиРесурс</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтруктураТаблицыSQLИтогиРесурсКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLИтогиРесурсРасширеннаяПодсказка" id="103"/>
+								</CheckBoxField>
+								<InputField name="СтруктураТаблицыSQLСиноним" id="66">
+									<DataPath>Объект.СтруктураТаблицыSQL.Синоним</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLСинонимКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLСинонимРасширеннаяПодсказка" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтруктураТаблицыSQLДляКопирования" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структура таблицы SQL (для копирования)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСтруктураТаблицыSQLДляКопированияРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<Table name="СтруктураТаблицыSQLДляКопирования" id="71">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СтруктураТаблицыSQLДляКопирования</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтруктураТаблицыSQLДляКопированияКонтекстноеМеню" id="72"/>
+							<AutoCommandBar name="СтруктураТаблицыSQLДляКопированияКоманднаяПанель" id="73"/>
+							<ExtendedTooltip name="СтруктураТаблицыSQLДляКопированияРасширеннаяПодсказка" id="74"/>
+							<SearchStringAddition name="СтруктураТаблицыSQLДляКопированияСтрокаПоиска" id="75">
+								<AdditionSource>
+									<Item>СтруктураТаблицыSQLДляКопирования</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТаблицыSQLДляКопированияСтрокаПоискаКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="СтруктураТаблицыSQLДляКопированияСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтруктураТаблицыSQLДляКопированияСостояниеПросмотра" id="78">
+								<AdditionSource>
+									<Item>СтруктураТаблицыSQLДляКопирования</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТаблицыSQLДляКопированияСостояниеПросмотраКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="СтруктураТаблицыSQLДляКопированияСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтруктураТаблицыSQLДляКопированияУправлениеПоиском" id="81">
+								<AdditionSource>
+									<Item>СтруктураТаблицыSQLДляКопирования</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТаблицыSQLДляКопированияУправлениеПоискомКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="СтруктураТаблицыSQLДляКопированияУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СтруктураТаблицыSQLДляКопированияНомерСтроки" id="84">
+									<DataPath>Объект.СтруктураТаблицыSQLДляКопирования.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLДляКопированияНомерСтрокиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLДляКопированияНомерСтрокиРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<InputField name="СтруктураТаблицыSQLДляКопированияИмяПоляSQL" id="87">
+									<DataPath>Объект.СтруктураТаблицыSQLДляКопирования.ИмяПоляSQL</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLДляКопированияИмяПоляSQLКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLДляКопированияИмяПоляSQLРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<InputField name="СтруктураТаблицыSQLДляКопированияТипПоля" id="90">
+									<DataPath>Объект.СтруктураТаблицыSQLДляКопирования.ТипПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТаблицыSQLДляКопированияТипПоляКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="СтруктураТаблицыSQLДляКопированияТипПоляРасширеннаяПодсказка" id="92"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЕдиныйФорматДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьИзМакета" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из макета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из макета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИзМакета</Action>
+		</Command>
+	</Commands>
+</Form>

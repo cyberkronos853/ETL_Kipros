@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа4" id="61">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="116">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="117"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="НаименованиеПолное" id="113">
+					<DataPath>Объект.НаименованиеПолное</DataPath>
+					<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="115"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа3" id="118">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="119"/>
+			<ChildItems>
+				<Page name="Группа5" id="120">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="121"/>
+					<ChildItems>
+						<CheckBoxField name="ЭлементыДоходов" id="107">
+							<DataPath>Объект.ЭлементыДоходов</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭлементыДоходовКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="ЭлементыДоходовРасширеннаяПодсказка" id="109"/>
+						</CheckBoxField>
+						<CheckBoxField name="ЭлементыЗатрат" id="110">
+							<DataPath>Объект.ЭлементыЗатрат</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭлементыЗатратКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ЭлементыЗатратРасширеннаяПодсказка" id="112"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВидыДвижения" id="71">
+							<DataPath>Объект.ВидыДвижения</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВидыДвиженияКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ВидыДвиженияРасширеннаяПодсказка" id="73"/>
+						</CheckBoxField>
+						<CheckBoxField name="КаналыПродаж" id="74">
+							<DataPath>Объект.КаналыПродаж</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КаналыПродажКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="КаналыПродажРасширеннаяПодсказка" id="76"/>
+						</CheckBoxField>
+						<CheckBoxField name="ТипыЗатрат" id="77">
+							<DataPath>Объект.ТипыЗатрат</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТипыЗатратКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ТипыЗатратРасширеннаяПодсказка" id="79"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВидПерсонала" id="80">
+							<DataPath>Объект.ВидПерсонала</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВидПерсоналаКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ВидПерсоналаРасширеннаяПодсказка" id="82"/>
+						</CheckBoxField>
+						<CheckBoxField name="РынокСбыта" id="83">
+							<DataPath>Объект.РынокСбыта</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РынокСбытаКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="РынокСбытаРасширеннаяПодсказка" id="85"/>
+						</CheckBoxField>
+						<CheckBoxField name="Сценарии" id="86">
+							<DataPath>Объект.Сценарии</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СценарииКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="СценарииРасширеннаяПодсказка" id="88"/>
+						</CheckBoxField>
+						<CheckBoxField name="Период" id="89">
+							<DataPath>Объект.Период</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="91"/>
+						</CheckBoxField>
+						<CheckBoxField name="Компания" id="92">
+							<DataPath>Объект.Компания</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КомпанияКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="КомпанияРасширеннаяПодсказка" id="94"/>
+						</CheckBoxField>
+						<CheckBoxField name="Контрагенты" id="95">
+							<DataPath>Объект.Контрагенты</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КонтрагентыКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="КонтрагентыРасширеннаяПодсказка" id="97"/>
+						</CheckBoxField>
+						<CheckBoxField name="Версия" id="98">
+							<DataPath>Объект.Версия</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВерсияКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="100"/>
+						</CheckBoxField>
+						<CheckBoxField name="Валюта" id="101">
+							<DataPath>Объект.Валюта</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВалютаКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="103"/>
+						</CheckBoxField>
+						<CheckBoxField name="ТоварыПродукцияУслуги" id="104">
+							<DataPath>Объект.ТоварыПродукцияУслуги</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТоварыПродукцияУслугиКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="ТоварыПродукцияУслугиРасширеннаяПодсказка" id="106"/>
+						</CheckBoxField>
+						<CheckBoxField name="КатегорияАктива" id="68">
+							<DataPath>Объект.КатегорияАктива</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КатегорияАктиваКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="КатегорияАктиваРасширеннаяПодсказка" id="70"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа6" id="122">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="123"/>
+					<ChildItems>
+						<InputField name="ТекстЗапроса" id="63">
+							<DataPath>Объект.ТекстЗапроса</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Бюджеты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

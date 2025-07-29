@@ -1,0 +1,3155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WebService uuid="30afd82f-77d3-4454-a3da-f668cadc273b">
+		<Properties>
+			<Name>ConsEx</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Cons ex</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Namespace>http://ConsEx</Namespace>
+			<XDTOPackages>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage.ПакетXDTO</xr:Value>
+				</xr:Item>
+			</XDTOPackages>
+			<DescriptorFileName>ws1.1cws</DescriptorFileName>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<Operation uuid="65371164-cdc9-4f71-ad7d-698cdc8d002c">
+				<Properties>
+					<Name>GetTheNumberOfAccepted</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить номер принятого</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:int</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTheNumberOfAccepted</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="31870d1e-34e5-41e4-bc01-4996218b7b4f">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="90ea4f67-b27f-4a7b-8248-07f136c2988b">
+				<Properties>
+					<Name>GetTVRemains</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить ТЗ остатки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTVRemains</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="858b9d06-dd1b-4e16-b213-a34a79e80d92">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="b8445593-58fb-4dc5-8a6f-47ce6041a3e3">
+				<Properties>
+					<Name>GetTVAccountBalances</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить ТЗ остатки по счету</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTVAccountBalances</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="4b0f00ef-07ff-4bc8-add0-a034de7e3ead">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="c6445b61-6fe6-4256-b7a4-a4c2b26dbac5">
+						<Properties>
+							<Name>Account</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счет</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="f3aed69c-144e-4972-93b5-b9dd928866ab">
+				<Properties>
+					<Name>GetObjectsForUpload</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить объекты для выгрузки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetObjectsForUpload</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="94992c55-be99-4e39-9780-71c330082ff0">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="85f404dc-3c30-42aa-a60e-09c29942ac56">
+				<Properties>
+					<Name>GetTheLatestProcessingVersion</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить актуальную версию обработки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTheLatestProcessingVersion</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="8a431cee-656f-4b45-bf53-5c38ee2db42b">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="4bdcacd6-8128-4251-bd83-ff3dd1452983">
+				<Properties>
+					<Name>GetProcessing</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить обработку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetProcessing</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="28c20f6b-bb15-43f8-9645-09a109c22b36">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="84bad4dd-48a0-45b4-a43f-982a98bd72bf">
+				<Properties>
+					<Name>GetReportsToUpload</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить отчеты для выгрузки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportsToUpload</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="9e2782fc-7b1c-48c4-8c0c-f70a1a212e14">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="a623b371-4366-4c1c-9fbd-4c80167ce4b7">
+				<Properties>
+					<Name>GetObjectsForReloading</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить объекты для повторной выгрузки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetObjectsForReloading</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="689167c9-9a90-4708-aed9-f4dd43596b60">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="a9dbeaab-7a1e-42e7-a3ff-77f25be31790">
+				<Properties>
+					<Name>GetScheduleUpload</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить расписание выгрузки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetScheduleUpload</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="c2c6c207-bd2b-4fa5-825a-c641941a9a39">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="7578b761-3351-4e59-b96a-0f37f7a8863c">
+				<Properties>
+					<Name>GetChartOfAccounts</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить план счетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:boolean</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetChartOfAccounts</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="be94c072-ffe1-4d0f-b030-abb20eb1e80e">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="7c433b19-43e8-41b7-a1dd-2c074589d054">
+						<Properties>
+							<Name>Values</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Values</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="b9cb7b79-637b-4d3c-8e3c-fd4d4378d646">
+				<Properties>
+					<Name>GetClosedPeriodDate</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить дату закрытого периода</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetClosedPeriodDate</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="62be7a53-9912-4ab1-bb77-107bcc53172d">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="ab18672b-898a-44ff-8986-3af862f60810">
+				<Properties>
+					<Name>CheckBase</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить базу</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>CheckBase</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="5c4bba68-f4fb-4766-a379-668c3fb8a6e1">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="d021ea98-ee56-45f0-aefb-59d44bf08a71">
+				<Properties>
+					<Name>SetRequest</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set request</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetRequest</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="007b47d3-513c-4fe6-85cd-d4201f7d05c7">
+						<Properties>
+							<Name>aDocRequest</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>A doc request</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:aDocRequest</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="3867b2b2-b882-43d3-8514-aaec41345b72">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="85667ce9-da7a-4af2-b470-8e1b6a160b5d">
+				<Properties>
+					<Name>GetRequestResult</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get request result</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetRequestResult</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="2c2bda7d-9c03-4b9b-9b1f-c0191697e9ae">
+						<Properties>
+							<Name>Number</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Number</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="10135dbe-6d61-4f75-b76c-6498e4d769f9">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="4357e183-ce64-47d7-8819-4f92b53b75e6">
+				<Properties>
+					<Name>GetReference</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get reference</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReference</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReference</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="5a789cac-68ea-4e9f-a8f1-db14d77c7b0c">
+						<Properties>
+							<Name>Reference</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Reference</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="232c4143-59c1-40fd-83eb-f311fe98ea6d">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="1ec5e966-a60c-486f-83fd-b2ff35d2822f">
+				<Properties>
+					<Name>GetReport</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReport</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReport</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="717db41d-fbda-4528-afb5-b24f196f4c84">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="bbb3da3d-10ca-4651-bf21-87b0556c5a1a">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="479f5c7e-ab7e-4ec7-9848-4178c1257532">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a457f687-a794-471c-9656-6c6a43a2d984">
+						<Properties>
+							<Name>TypeOfReport</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type of report</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="cd972b7b-d8ce-457d-a921-ea223c3d6f4e">
+				<Properties>
+					<Name>GetReportPlanFact</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report plan fact</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReportPlanFact</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportPlanFact</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="d2589166-2a1a-4ee8-9b55-885313ccef36">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="203083ea-3af3-470e-9492-1e32a6c50c0c">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="35d87d77-e025-442b-ad5d-779edf9ea453">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="3b1f8e7e-cefc-424a-9aa9-93e39696a60e">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a01d0ea2-cced-4ff9-a259-4b7278cf1936">
+						<Properties>
+							<Name>TypeOfReport</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type of report</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="bf85efbb-fe1c-4235-8c02-40c1c9d39f9b">
+				<Properties>
+					<Name>GetReportPlanFactInvest</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report plan fact invest</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReportPlanFact</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportPlanFactInvest</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="7ab5f450-9fd9-4c86-b18a-9ab6e2e27665">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="82869b53-45eb-4d8c-9767-a649d0e19a86">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="96a37081-3232-4f0d-affd-4698c4084e31">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="55d24d6f-a1b8-4512-bd05-322917850f18">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="a44c12e1-42d1-43cd-b8ed-6d99ca4afe99">
+				<Properties>
+					<Name>GetReportPlanFactCredit</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report plan fact credit</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReportPlanFact</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportPlanFactCredit</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="2960fcce-ee9c-4009-9c65-279b5eece137">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="3401c200-f236-4d52-8b58-2b943cd0a3a4">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="e0b61d5f-c45c-40a3-9554-8898daf4aa19">
+						<Properties>
+							<Name>TypeOfReport</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type of report</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="64b04a3e-60a0-4d8f-aef1-01ec389e20ed">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="7f79796d-b5c9-4373-bdfb-3165dc1fc691">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="aeff8f85-7dad-4b63-ba80-434d9dc62069">
+				<Properties>
+					<Name>GetReportDetailed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report detailed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReport</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportDetailed</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="987a8875-f48d-4c8a-8932-9ec9b23e72a9">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="c15a09c2-3b95-4df4-bc68-062a5159bc64">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="8e5e689f-3bab-4fef-83a9-d39329f3ffe8">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="bf3022ac-d2d1-4fa5-a60a-c93a5745036f">
+						<Properties>
+							<Name>TypeOfReport</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type of report</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="a5303008-2c01-4599-8f87-628f97288050">
+				<Properties>
+					<Name>SetClosedPeriodDate</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set closed period date</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetClosedPeriodDate</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="ab1e4ce3-d82b-418e-97bc-69acd9529aa6">
+						<Properties>
+							<Name>Data</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="290b5f4a-4a0f-46f8-9933-aa9f0beaf8f7">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="1e99273a-099b-4544-ac8a-357878b7c844">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="64c29aa3-fc48-4c79-b26e-a9934126a107">
+				<Properties>
+					<Name>GetReportAnalysis</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report analysis</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfAnalysis</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportAnalysis</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="6fb68f07-bfff-40f5-a398-9b5eab933a6f">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="c6dfa1f0-9379-4c62-8fc1-daeaa5de6940">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="f6c8538e-983f-4f13-bd8e-e5a8aaf841f2">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="e7d71b50-d0b5-40fc-9cf2-c0b019d733c3">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="9d3f6551-180d-41e0-8626-7df81c3f1fbf">
+				<Properties>
+					<Name>GetReportByIIN</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report by IIN</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReport</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportByIIN</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="caf7434e-db38-44a7-bf63-32c66d5f4029">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="9c88188c-309b-4c83-bbfa-d6bfae281368">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="8aee68bd-3c63-4b1f-bc4c-dcba6ecbfd85">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="b973d9ab-0cb5-421a-8499-baf4697dfc37">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="c45a10d8-5d7d-4818-83bf-c97fb6a9fd32">
+						<Properties>
+							<Name>TypeOfReport</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type of report</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="e157023f-5c75-4f1d-9cec-0c7243eb8e27">
+				<Properties>
+					<Name>GetReportAccountMovements</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report account movements</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfAccountMovements</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReportAccountMovements</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="977941ac-df1c-49af-8a44-9d583a100265">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="6614ce33-6d39-4758-bc64-49f57c1acc09">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="50a76ba4-baa9-4cc6-bbfb-541c79461ffb">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="cf4d1969-bab9-45ac-8c05-dc261d63f101">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="eb3f3bdb-0f75-41fe-8388-d11ba396bec8">
+						<Properties>
+							<Name>Account</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Account</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="c5f93857-3923-490b-9a05-641c93ebf584">
+				<Properties>
+					<Name>SetDocPlan</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set doc plan</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetDocPlan</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f6d5a9a3-e4ea-4eef-b807-635eaf05baae">
+						<Properties>
+							<Name>aDoc</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>A doc</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:aDocPlan</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="aef87736-b6ac-4a61-8f3d-5c581ebdc820">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="517c3e53-800d-46b5-93b0-fc01fe102a7b">
+				<Properties>
+					<Name>SetDocFact</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set doc fact</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetDocFact</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="8816eb81-1c15-4a77-b4e2-3c11647d2658">
+						<Properties>
+							<Name>aDoc</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>A doc</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:aDocPlan</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="7c16d354-8dc2-4b99-b421-618b6a670e71">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="01df593b-e90b-41aa-b9cd-2b0e763c13b6">
+				<Properties>
+					<Name>SetDocKPI</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set doc KPI</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetDocKPI</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="8342f9da-db5e-45f5-89d9-fbb9bab5ad4a">
+						<Properties>
+							<Name>aDocKPI</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>A doc KPI</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:aDocKPI</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="be8025ba-3cb4-447d-8e58-3e959dd41bb0">
+				<Properties>
+					<Name>SetDocOtherInd</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set doc other ind</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetDocOtherInd</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="fc8895ea-4a08-4ae5-b01d-c1990b77fc95">
+						<Properties>
+							<Name>aDocOtherInd</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>A doc other ind</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:aDocOtherInd</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="16d840ba-dbfb-42c2-8325-78dc3f43673e">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="2b01301b-7567-4d3e-9c25-38d034a02238">
+				<Properties>
+					<Name>GetOperatingStatus</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get operating status</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetOperatingStatus</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="9057b802-dec6-497b-ab4f-47199f62501d">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="af9c416d-bcd7-4d15-85c9-2c99fa9cd778">
+						<Properties>
+							<Name>GUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="8986d4d2-96a7-4465-9a81-0625d2c964a5">
+				<Properties>
+					<Name>GetProcessingReport</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить обработку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetProcessingReport</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="86f0e898-0e46-4d85-9489-012f80406a01">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="8fb2b5a5-0db1-4cec-8b18-c593fc064082">
+				<Properties>
+					<Name>GetTypesOfOtherIndicators</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get types of other indicators</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfTypesOfOtherIndicators</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTypesOfOtherIndicators</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="9dc5e5cb-932c-47d0-a982-c7b0e1fc9af1">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="87c4ed95-c828-4ecf-bbd9-913f5527683a">
+				<Properties>
+					<Name>GetReferenceDocument</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get reference document</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:aDocOtherInd</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReferenceDocument</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="1bcce011-bd8e-455d-96b6-87d986988aec">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="d92c45da-2d40-4dbc-9763-ef70c6e31ff9">
+						<Properties>
+							<Name>TypesOfOtherIndicators</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Types of other indicators</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="6ce15579-7092-4552-ab3e-a6fddadd6d63">
+				<Properties>
+					<Name>BudgeIitemAccounts</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Budge iitem accounts</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayAccountsResponse</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>BudgeIitemAccounts</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f233de0a-53fc-4a6f-9231-c8ad8a5cca1f">
+						<Properties>
+							<Name>ArrayAccountsQuery</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Array accounts query</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:ArrayAccountsQuery</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="33540895-0067-4a8d-95fd-ea29dd684f8c">
+				<Properties>
+					<Name>ComplianceGoodsWithOtherIndicators</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Compliance goods with other indicators</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>ComplianceGoodsWithOtherIndicators</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="32c5a299-8892-45d8-9b3a-b970eaf46b08">
+						<Properties>
+							<Name>ArrayComplianceGoodsWithOtherIndicators</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Array compliance goods with other indicators</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:ArrayComplianceGoodsWithOtherIndicators</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="f344fefd-8e14-4d05-9c43-00fb569e44df">
+				<Properties>
+					<Name>GetKPI</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get KPI</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfKPI</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetKPI</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="dc6c26cc-084c-4689-b7c5-e0c21a6596e4">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="1c0a6f9a-22b8-4b8c-a2c7-1588d400bf80">
+				<Properties>
+					<Name>SensitivityToPossibleCourseChanges</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sensitivity to possible course changes</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArraySensitivityToPossibleCourseChanges</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SensitivityToPossibleCourseChanges</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="f7eb306d-6602-4f11-9e00-e2cca11ef46f">
+				<Properties>
+					<Name>GetAssetCategory</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get asset category</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArraysOfAssetCategory</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetAssetCategory</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f8f01bf0-8b10-4f8c-8b42-03cfaa9c4389">
+						<Properties>
+							<Name>aKOF</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>A KOF</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:ArraysOfKOF</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="9a0a1fba-4e53-4c92-8242-793c4835d9f4">
+				<Properties>
+					<Name>CheckDocStatus</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Check doc status</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>CheckDocStatus</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="8a09c0c4-c634-444f-8eb7-a7b6ae189ec5">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="12f28bf1-3e42-417d-8e6a-b1eb1b9307f5">
+						<Properties>
+							<Name>Number</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Number</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="97d2ce8b-c04b-4d9f-99be-18920be02dc7">
+				<Properties>
+					<Name>GetPeriodsOtherIndicators</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get periods other indicators</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfPeriodsOtherIndicators</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetPeriodsOtherIndicators</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="370b42bf-514a-4cff-99d5-191ae4a84868">
+				<Properties>
+					<Name>GetKindOfIndicator</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get kind of indicator</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayKindOfIndicators</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetKindOfIndicator</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="10266faa-e629-47e1-ba5f-9fb7efcd1026">
+				<Properties>
+					<Name>CheckUpdatesOtherInd</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Check updates other ind</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:boolean</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>CheckUpdatesOtherInd</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="18f299b6-7297-4092-90ae-4845fc39ef73">
+						<Properties>
+							<Name>KindOtherInd</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Kind other ind</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="0e15178c-d01d-47c9-b44e-43e1d39fc4b8">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="e69a42ac-2db2-4675-88bc-3be57460b51d">
+				<Properties>
+					<Name>UpdatesOtherIndInstalled</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Updates other ind installed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>UpdatesOtherIndInstalled</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="ae7fb305-63a7-43e2-84b3-c6d723fb37c2">
+						<Properties>
+							<Name>UpdateResult</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Update result</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="bdacc818-b15e-4b41-ae56-34b7757c0ba6">
+						<Properties>
+							<Name>IIN</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>IIN</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="5cdc9ceb-73d6-4763-8b6c-521139424042">
+				<Properties>
+					<Name>GetCodeKOF</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get code KOF</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfKOF</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetCodeKOF</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="0118e9ae-aa86-4ce8-b348-5aa60f222530">
+				<Properties>
+					<Name>GetTheLatestConsolidationProcessingVersion</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить актуальную версию обработки сверка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTheLatestConsolidationProcessingVersion</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="78543d12-a524-47d8-8359-1793186cc24c">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="1aa2fff2-3629-4712-a243-9cc916ed7340">
+				<Properties>
+					<Name>GetConsolidationProcessing</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить обработку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetConsolidationProcessing</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="31e0bcfa-dc17-49e2-bbeb-6f2fdb1543c1">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="156fac24-6c0e-48be-9760-ee5804595f98">
+				<Properties>
+					<Name>GetRecordsCount</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить количество записей</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetRecordsCount</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="622014d3-31a2-4305-9712-5df47da30d9b">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="731fc93c-a1fc-4824-835c-e7e17436405b">
+						<Properties>
+							<Name>Params</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка с отборами</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="f7997bf5-58ac-4e03-8a8e-c87f17628f28">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип записей</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>1 - справочник, документ 2 - Регистры с регистратором 3 - независимые регистры</Comment>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="3e80dbec-3567-4ffb-931c-f85bad37eb90">
+						<Properties>
+							<Name>Table</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя таблицы</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a14b3fde-1459-47cd-9472-5675c132d53d">
+						<Properties>
+							<Name>Keys</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание ключа регистрации (для регистров сведений)</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="7f7fedec-c08c-4df7-a02a-4f7cf941ec45">
+				<Properties>
+					<Name>GetRecordsDifference</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить количество записей</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetRecordsDifference</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="1b0fd086-c3b8-431f-9bac-0bfcca89ed26">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="8a807733-1356-4d29-bed0-92402418e9de">
+						<Properties>
+							<Name>Params</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка с записями и отборами для сверки</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="8cbc4254-8284-42e9-9e51-0936d21c8fb1">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип записей</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>1 - справочник, документ 2 - Регистры с регистратором 3 - независимые регистры</Comment>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="c3395e67-e014-4e1e-807a-3a1cb6356d9d">
+						<Properties>
+							<Name>Table</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя таблицы</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="3b83387a-33d3-4c06-b9d6-de298fb95ae7">
+				<Properties>
+					<Name>DeleteRecords</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УдалитьЗаписи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>DeleteRecords</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="02e3a52a-dbf6-429b-a22a-45732fc8706e">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="e34c4a26-f2d6-409c-bc0e-7791861c5448">
+						<Properties>
+							<Name>Params</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка с записями и отборами для сверки</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="850a7c68-cbbd-49a0-84b7-54302b5383b4">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип записей</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>1 - справочник, документ 2 - Регистры с регистратором 3 - независимые регистры</Comment>
+							<XDTOValueType>xs:integer</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="750b5dc4-c9f0-44ec-8f42-3b0737ad55b5">
+						<Properties>
+							<Name>Table</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя таблицы</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="8f994dc3-9560-4216-b2f4-535b023f48a0">
+				<Properties>
+					<Name>PostNotification</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Post notification</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>PostNotification</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="cfa4516b-c147-4235-909e-4501435fe166">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="ce4120dd-c0dd-4f6c-b1c8-e8c71f6b793f">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип записей</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="744dd83b-c264-4fbf-898a-928e791b21a4">
+						<Properties>
+							<Name>Period</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Period</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="77be2316-f33c-4a8f-ac7b-747c883eae98">
+						<Properties>
+							<Name>GUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="466cc3a8-a214-445c-b8e9-d3bfc68bfdb8">
+						<Properties>
+							<Name>Error</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Error</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:boolean</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="e04718b7-f657-4962-8975-d9bdf046c0f8">
+						<Properties>
+							<Name>Info</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Info</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="4da832d0-8968-46af-b5d0-5108e428db2e">
+						<Properties>
+							<Name>Techinfo</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Techinfo</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="52766324-c06a-4c06-8f35-e268d7400503">
+				<Properties>
+					<Name>GetProcedureStatus</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get procedure status</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetProcedureStatus</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="5f229760-2798-4adc-9712-05a990fc0074">
+						<Properties>
+							<Name>ProcName</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Proc name</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="dc5bd244-339a-4d6a-b2e8-d98742d532e1">
+				<Properties>
+					<Name>GetTheLatestProcessingVersionByType</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить актуальную версию обработки по виду</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>++ Кибернетика</Comment>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTheLatestProcessingVersionByType</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f152e32a-08aa-42db-a93b-6eefc423eee4">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="5cddb810-edfd-4967-9466-15561e7fca0e">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="b0b04e89-4b20-4ba1-811b-de5403daac28">
+				<Properties>
+					<Name>GetProcessingByType</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить обработку по типу</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetProcessingByType</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="dfb0cacd-39e6-4214-bb5b-162ab247fa8a">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="0e41d210-56f0-483f-ad00-f5607fc0c0fd">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="5f00b9c0-8108-48b9-a7a3-ac566fde0ec1">
+				<Properties>
+					<Name>GetProcsDescriptionByBase</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get procs description by base</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetProcsDescriptionByBase</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="1e068337-303c-46f2-a0f1-6f0228672e31">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="632c21d5-a8d1-4028-af2b-31220b850138">
+				<Properties>
+					<Name>GetReconciliationObjects</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get reconciliation objects</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReconciliationObjects</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="40330215-b94a-449f-9cdb-773523c6a326">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="348cf045-8f6b-401f-9f24-da6cae0ff164">
+				<Properties>
+					<Name>UpdateReconciliationObjects</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Update reconciliation objects</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>UpdateReconciliationObjects</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f88e1fdf-666c-4cc8-9176-fd4a44c8addc">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="037e8c5d-8247-4f6e-aa3d-89d898f398e0">
+						<Properties>
+							<Name>Result</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Result</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="8c484fd9-e49e-43eb-b5db-aa80aef57f31">
+				<Properties>
+					<Name>PostMapping</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Post mapping</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>PostMapping</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="21ae1597-3e52-4297-b474-c0511d6e47f4">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="bd3b8b53-6e64-4f37-91d2-6eb3edf6c64f">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="0ed79f50-de29-4f7b-aac3-84e22d34f006">
+						<Properties>
+							<Name>SourceType</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Source type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a8209b73-8611-4bc7-872a-df906f64aeb9">
+						<Properties>
+							<Name>Data</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="6ab6c1ec-6709-4c98-8198-6ce5880774e8">
+				<Properties>
+					<Name>GetEtalonsChanges</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get etalons changes</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetEtalonsChanges</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f6660905-f49d-4c2c-a102-d3fc1e309a7c">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="78f37327-e01b-4853-b825-86149e4e95d1">
+						<Properties>
+							<Name>Number</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Number</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="0d4a33f2-adc4-4541-9b21-9711a1dad3e1">
+				<Properties>
+					<Name>GetETLId</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get ETLId</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetETLId</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="cc7df2e8-2ca7-4d5d-b3c9-108fc8d0d919">
+				<Properties>
+					<Name>GetObjectsBaseForUpload</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить объекты баз для выгрузки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetObjectsBaseForUpload</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="7205dfea-7c3d-4d37-9415-83d82ae95f49">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="54f6d69d-7284-4252-8fd7-213f6dc0e668">
+				<Properties>
+					<Name>GetObjectStructure</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить структуру объекта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetObjectStructure</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="8ce76573-fb3f-4ff6-a8e1-2e2d4802ae6c">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="4b6812cc-7235-4137-b9dc-3689fbb89e21">
+						<Properties>
+							<Name>ObjectName</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Object name</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="da6fb3a0-83c4-480a-b31f-cea3e074d09e">
+				<Properties>
+					<Name>GetControlList</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get control list</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetControlList</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="6d9d76ac-8558-4a26-9ff5-12d52a7c333c">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="5b7c912d-27ca-4c87-b28e-6d1094c11674">
+						<Properties>
+							<Name>ObjectType</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Object type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="aaa9617e-0e18-40e5-8e88-da0f28822dbc">
+				<Properties>
+					<Name>PostMappingByRecord</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Post mapping by record</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>PostMappingByRecord</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="e0a6baa0-81da-43c5-8e61-0762d7ae6224">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="97342eae-7cec-4809-8dac-ddf972ff5037">
+						<Properties>
+							<Name>Type</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="64b86edf-09c2-4647-bc70-586ea14d4161">
+						<Properties>
+							<Name>SourceType</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Source type</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="bbc0363c-450e-4dbd-afa4-4769740c719b">
+						<Properties>
+							<Name>Data</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="393dfddf-8017-4462-81ca-14191d72a2e6">
+				<Properties>
+					<Name>GetMDHash</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get MD Hash</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetMDHash</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="25c3a048-4a72-4e08-b1a9-bac8aa3b6aac">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+		</ChildObjects>
+	</WebService>
+</MetaDataObject>

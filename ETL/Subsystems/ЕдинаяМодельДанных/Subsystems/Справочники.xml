@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Subsystem uuid="30bebd14-abf7-40ea-a511-9b9ee78df7a7">
+		<Properties>
+			<Name>Справочники</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПланСчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиЗатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Доходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиДвиженияДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Бюджеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТоварыИУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыПерсонала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КаналыПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыЗатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сценарии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДвижения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БизнесНаправления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Субхолдинги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТерриториальноеРасположение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассификаторСтранМира</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФЦО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыКредиторов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассификаторОсновныхФондов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Версии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Корректировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипПроектаИИнвестиции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтадииПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДолговыеИнструменты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнвестиционныеИОперационныеПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЦелевоеЗначениеСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КредитныйПортфель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыДвижений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкаВидаПерсонала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Банки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

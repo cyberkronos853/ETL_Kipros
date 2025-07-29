@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Закрыть" id="28">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="29"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<LabelField name="GUID" id="34">
+			<DataPath>Запись.GUID</DataPath>
+			<ContextMenu name="GUIDКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="GUIDРасширеннаяПодсказка" id="36"/>
+		</LabelField>
+		<InputField name="База" id="37">
+			<DataPath>Запись.База</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="БазаКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Событие" id="4">
+			<DataPath>Запись.Событие</DataPath>
+			<ContextMenu name="СобытиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СобытиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<CheckBoxField name="Отправлено" id="40">
+			<DataPath>Запись.Отправлено</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтправленоКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ОтправленоРасширеннаяПодсказка" id="42"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЕстьОшибки" id="43">
+			<DataPath>Запись.ЕстьОшибки</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЕстьОшибкиКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ЕстьОшибкиРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<InputField name="ДатаОтправки" id="46">
+			<DataPath>Запись.ДатаОтправки</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаОтправкиКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ДатаОтправкиРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<HTMLDocumentField name="ТекстКоманды" id="22">
+			<DataPath>Запись.Информация</DataPath>
+			<ContextMenu name="ТекстКомандыКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ТекстКомандыРасширеннаяПодсказка" id="24"/>
+		</HTMLDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.УведомленияОСобытияхБаз</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

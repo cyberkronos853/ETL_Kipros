@@ -1,0 +1,1547 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="368">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="369"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаОбщие" id="374">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница общие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаОбщиеРасширеннаяПодсказка" id="375"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="127">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="128"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="327">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="328"/>
+									<ChildItems>
+										<UsualGroup name="Группа4" id="332">
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="333"/>
+											<ChildItems>
+												<InputField name="Наименование" id="4">
+													<DataPath>Объект.Description</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+													<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+												</InputField>
+												<InputField name="Код" id="1">
+													<DataPath>Объект.Code</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+													<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа12" id="334">
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="335"/>
+											<ChildItems>
+												<InputField name="КодСправочника" id="279">
+													<DataPath>Объект.КодСправочника</DataPath>
+													<ContextMenu name="КодСправочникаКонтекстноеМеню" id="280"/>
+													<ExtendedTooltip name="КодСправочникаРасширеннаяПодсказка" id="281"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Владелец" id="7">
+							<DataPath>Объект.Owner</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Родитель" id="273">
+							<DataPath>Объект.Parent</DataPath>
+							<ContextMenu name="РодительКонтекстноеМеню" id="274"/>
+							<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="275"/>
+						</InputField>
+						<CheckBoxField name="НеИспользуется" id="329">
+							<DataPath>Объект.НеИспользуется</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеИспользуетсяКонтекстноеМеню" id="330"/>
+							<ExtendedTooltip name="НеИспользуетсяРасширеннаяПодсказка" id="331"/>
+						</CheckBoxField>
+						<CheckBoxField name="НеВключатьВУправленческуюОтчетность" id="365">
+							<DataPath>Объект.НеВключатьВУправленческуюОтчетность</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеВключатьВУправленческуюОтчетностьКонтекстноеМеню" id="366"/>
+							<ExtendedTooltip name="НеВключатьВУправленческуюОтчетностьРасширеннаяПодсказка" id="367"/>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаСчетаУчета" id="213">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета учета</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа счета учета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаСчетаУчетаРасширеннаяПодсказка" id="214"/>
+							<ChildItems>
+								<Table name="Счета" id="254">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Объект.Счета</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СчетаКонтекстноеМеню" id="255"/>
+									<AutoCommandBar name="СчетаКоманднаяПанель" id="256"/>
+									<ExtendedTooltip name="СчетаРасширеннаяПодсказка" id="257"/>
+									<SearchStringAddition name="СчетаСтрокаПоиска" id="258">
+										<AdditionSource>
+											<Item>Счета</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СчетаСтрокаПоискаКонтекстноеМеню" id="259"/>
+										<ExtendedTooltip name="СчетаСтрокаПоискаРасширеннаяПодсказка" id="260"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СчетаСостояниеПросмотра" id="261">
+										<AdditionSource>
+											<Item>Счета</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СчетаСостояниеПросмотраКонтекстноеМеню" id="262"/>
+										<ExtendedTooltip name="СчетаСостояниеПросмотраРасширеннаяПодсказка" id="263"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СчетаУправлениеПоиском" id="264">
+										<AdditionSource>
+											<Item>Счета</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СчетаУправлениеПоискомКонтекстноеМеню" id="265"/>
+										<ExtendedTooltip name="СчетаУправлениеПоискомРасширеннаяПодсказка" id="266"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="СчетаНомерСтроки" id="267">
+											<DataPath>Объект.Счета.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СчетаНомерСтрокиКонтекстноеМеню" id="268"/>
+											<ExtendedTooltip name="СчетаНомерСтрокиРасширеннаяПодсказка" id="269"/>
+										</LabelField>
+										<InputField name="СчетаСчет" id="270">
+											<DataPath>Объект.Счета.Счет</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СчетаСчетКонтекстноеМеню" id="271"/>
+											<ExtendedTooltip name="СчетаСчетРасширеннаяПодсказка" id="272"/>
+											<Events>
+												<Event name="OnChange">СчетаСчетПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройкаАналитики" id="372">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка аналитики</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройка аналитики</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкаАналитикиРасширеннаяПодсказка" id="373"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройка" id="360">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкаРасширеннаяПодсказка" id="361"/>
+							<ChildItems>
+								<CheckBoxField name="ПрименимостьКФактическимДанным" id="305">
+									<DataPath>Объект.ПрименимостьКФактическимДанным</DataPath>
+									<Visible>false</Visible>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПрименимостьКФактическимДаннымКонтекстноеМеню" id="306"/>
+									<ExtendedTooltip name="ПрименимостьКФактическимДаннымРасширеннаяПодсказка" id="307"/>
+								</CheckBoxField>
+								<UsualGroup name="Группа2" id="380">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="381"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоЭлементамЗатрат" id="129">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по элементам затрат</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по элементам затрат</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПоЭлементамЗатратРасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<CheckBoxField name="АналитикаПоЭлементамЗатрат" id="10">
+									<DataPath>Объект.АналитикаПоЭлементамЗатрат</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="АналитикаПоЭлементамЗатратКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="АналитикаПоЭлементамЗатратРасширеннаяПодсказка" id="12"/>
+									<Events>
+										<Event name="OnChange">АналитикаПоЭлементамЗатратПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаПризнаки1" id="159">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признаки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа признаки1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПризнаки1РасширеннаяПодсказка" id="160"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаУказанныйЭлементЗатрат" id="161">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указанная единица Элемент затрат</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа указанный элемент затрат</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУказанныйЭлементЗатратРасширеннаяПодсказка" id="162"/>
+											<ChildItems>
+												<RadioButtonField name="УказанныйЭлементЗатрат" id="163">
+													<DataPath>ЭлементЗатратОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указаный элемент затрат:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УказанныйЭлементЗатратКонтекстноеМеню" id="164"/>
+													<ExtendedTooltip name="УказанныйЭлементЗатратРасширеннаяПодсказка" id="165"/>
+													<Events>
+														<Event name="OnChange">ОпределятьЭлементЗатратПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="ЭлементЗатрат" id="166">
+													<DataPath>Объект.ЭлементЗатрат</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<ContextMenu name="ЭлементЗатратКонтекстноеМеню" id="167"/>
+													<ExtendedTooltip name="ЭлементЗатратРасширеннаяПодсказка" id="168"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЭлементОпределяетсяАналитикой" id="169">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Элемент затрат аналитикой</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа элемент определяется аналитикой</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЭлементОпределяетсяАналитикойРасширеннаяПодсказка" id="170"/>
+											<ChildItems>
+												<RadioButtonField name="ЭлементЗатратОпеределяетсяАналитикой" id="171">
+													<DataPath>ЭлементЗатратОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Элемент затрат определяется аналитикой:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ЭлементЗатратОпеределяетсяАналитикойКонтекстноеМеню" id="172"/>
+													<ExtendedTooltip name="ЭлементЗатратОпеределяетсяАналитикойРасширеннаяПодсказка" id="173"/>
+													<Events>
+														<Event name="OnChange">ОпределятьЭлементЗатратПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоЭлементамДоходов" id="131">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по элементам доходов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по элементам доходов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПоЭлементамДоходовРасширеннаяПодсказка" id="132"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПризнаки2" id="174">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признаки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа признаки1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПризнаки2РасширеннаяПодсказка" id="175"/>
+									<ChildItems>
+										<CheckBoxField name="АналитикаПоЭлементамДоходов" id="189">
+											<DataPath>Объект.АналитикаПоЭлементамДоходов</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоЭлементамДоходовКонтекстноеМеню" id="190"/>
+											<ExtendedTooltip name="АналитикаПоЭлементамДоходовРасширеннаяПодсказка" id="191"/>
+											<Events>
+												<Event name="OnChange">АналитикаПоЭлементамДоходовПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаУказанныйЭлементДоходов" id="176">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указанная единица Элемент доходов</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа указанный элемент доходов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУказанныйЭлементДоходовРасширеннаяПодсказка" id="177"/>
+											<ChildItems>
+												<RadioButtonField name="УказанныйЭлементДоходов" id="178">
+													<DataPath>ЭлементДоходовОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указаный элемент доходов:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УказанныйЭлементДоходовКонтекстноеМеню" id="179"/>
+													<ExtendedTooltip name="УказанныйЭлементДоходовРасширеннаяПодсказка" id="180"/>
+													<Events>
+														<Event name="OnChange">ОпределятьЭлементДоходовПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="ЭлементДоходов" id="181">
+													<DataPath>Объект.ЭлементДоходов</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<ContextMenu name="ЭлементДоходовКонтекстноеМеню" id="182"/>
+													<ExtendedTooltip name="ЭлементДоходовРасширеннаяПодсказка" id="183"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЭлементОпределяетсяАналитикой1" id="184">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Элемент затрат аналитикой</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа элемент определяется аналитикой</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЭлементОпределяетсяАналитикой1РасширеннаяПодсказка" id="185"/>
+											<ChildItems>
+												<RadioButtonField name="ЭлементДоходовОпеределяетсяАналитикой" id="186">
+													<DataPath>ЭлементДоходовОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Элемент доходов определяется аналитикой:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ЭлементДоходовОпеределяетсяАналитикойКонтекстноеМеню" id="187"/>
+													<ExtendedTooltip name="ЭлементДоходовОпеределяетсяАналитикойРасширеннаяПодсказка" id="188"/>
+													<Events>
+														<Event name="OnChange">ОпределятьЭлементДоходовПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТоварыУслуги" id="133">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа товары услуги</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа товары услуги</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТоварыУслугиРасширеннаяПодсказка" id="134"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПризнаки3" id="192">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признаки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа признаки1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПризнаки3РасширеннаяПодсказка" id="193"/>
+									<ChildItems>
+										<CheckBoxField name="АналитикаПоТоварыПродукцияУслуги" id="28">
+											<DataPath>Объект.АналитикаПоТоварыПродукцияУслуги</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоТоварыПродукцияУслугиКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="АналитикаПоТоварыПродукцияУслугиРасширеннаяПодсказка" id="30"/>
+											<Events>
+												<Event name="OnChange">АналитикаПоТоварыПродукцияУслугиПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаУказанныйЭлементТоварыУслуги" id="197">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указанная единица товары услуги</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа указанный элемент доходов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУказанныйЭлементТоварыУслугиРасширеннаяПодсказка" id="198"/>
+											<ChildItems>
+												<RadioButtonField name="УказанныйТоварыПродукцияУслуги" id="199">
+													<DataPath>ТоварыПродукцияУслугиОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указаный Товары, продукция, услуги:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УказанныйТоварыПродукцияУслугиКонтекстноеМеню" id="200"/>
+													<ExtendedTooltip name="УказанныйТоварыПродукцияУслугиРасширеннаяПодсказка" id="201"/>
+													<Events>
+														<Event name="OnChange">ОпределятьТоварыУслугиПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="ТоварыПродукцияУслуги" id="202">
+													<DataPath>Объект.ТоварыПродукцияУслуги</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<ContextMenu name="ТоварыПродукцияУслугиКонтекстноеМеню" id="203"/>
+													<ExtendedTooltip name="ТоварыПродукцияУслугиРасширеннаяПодсказка" id="204"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЭлементОпределяетсяАналитикой2" id="205">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Элемент затрат аналитикой</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа элемент определяется аналитикой</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЭлементОпределяетсяАналитикой2РасширеннаяПодсказка" id="206"/>
+											<ChildItems>
+												<RadioButtonField name="ТоварыПродукцияУслугиОпеределяетсяАналитикой" id="207">
+													<DataPath>ТоварыПродукцияУслугиОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Товары, продукция, услуги определяется аналитикой:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТоварыПродукцияУслугиОпеределяетсяАналитикойКонтекстноеМеню" id="208"/>
+													<ExtendedTooltip name="ТоварыПродукцияУслугиОпеределяетсяАналитикойРасширеннаяПодсказка" id="209"/>
+													<Events>
+														<Event name="OnChange">ОпределятьТоварыУслугиПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВидПерсонала" id="149">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вид персонала</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вид персонала</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидПерсоналаРасширеннаяПодсказка" id="150"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПризнаки4" id="218">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признаки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа признаки1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПризнаки4РасширеннаяПодсказка" id="219"/>
+									<ChildItems>
+										<CheckBoxField name="АналитикаПоВидамПерсонала" id="82">
+											<DataPath>Объект.АналитикаПоВидамПерсонала</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоВидамПерсоналаКонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="АналитикаПоВидамПерсоналаРасширеннаяПодсказка" id="84"/>
+											<Events>
+												<Event name="OnChange">АналитикаПоВидПерсоналаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаУказанныйЭлементВидПерсонала" id="223">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указанная единица товары услуги</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа указанный элемент доходов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУказанныйЭлементВидПерсоналаРасширеннаяПодсказка" id="224"/>
+											<ChildItems>
+												<RadioButtonField name="УказанныйВидПерсонала" id="225">
+													<DataPath>ВидПерсоналаОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указанный вид персонала</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УказанныйВидПерсоналаКонтекстноеМеню" id="226"/>
+													<ExtendedTooltip name="УказанныйВидПерсоналаРасширеннаяПодсказка" id="227"/>
+													<Events>
+														<Event name="OnChange">ОпределятьВидПерсоналаПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="ВидПерсонала" id="228">
+													<DataPath>Объект.ВидПерсонала</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<ContextMenu name="ВидПерсоналаКонтекстноеМеню" id="229"/>
+													<ExtendedTooltip name="ВидПерсоналаРасширеннаяПодсказка" id="230"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЭлементОпределяетсяАналитикой3" id="231">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Элемент затрат аналитикой</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа элемент определяется аналитикой</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЭлементОпределяетсяАналитикой3РасширеннаяПодсказка" id="232"/>
+											<ChildItems>
+												<RadioButtonField name="ВидПерсоналаОпеределяетсяАналитикой" id="233">
+													<DataPath>ВидПерсоналаОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Вид персонала определяется аналитикой</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ВидПерсоналаОпеределяетсяАналитикойКонтекстноеМеню" id="234"/>
+													<ExtendedTooltip name="ВидПерсоналаОпеределяетсяАналитикойРасширеннаяПодсказка" id="235"/>
+													<Events>
+														<Event name="OnChange">ОпределятьВидПерсоналаПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТипыЗатрат" id="151">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа типы затрат</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа типы затрат</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТипыЗатратРасширеннаяПодсказка" id="152"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПризнаки5" id="236">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признаки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа признаки1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПризнаки5РасширеннаяПодсказка" id="237"/>
+									<ChildItems>
+										<CheckBoxField name="АналитикаПоТипамЗатрат" id="91">
+											<DataPath>Объект.АналитикаПоТипамЗатрат</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоТипамЗатратКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="АналитикаПоТипамЗатратРасширеннаяПодсказка" id="93"/>
+											<Events>
+												<Event name="OnChange">АналитикаПоТипамЗатратПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаУказанныйТипЗатрат" id="241">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указанная единица типы затрат</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа указанный элемент доходов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУказанныйТипЗатратРасширеннаяПодсказка" id="242"/>
+											<ChildItems>
+												<RadioButtonField name="УказанныйТипЗатрат" id="243">
+													<DataPath>ТипЗатратОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указанный тип затрат</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УказанныйТипЗатратКонтекстноеМеню" id="244"/>
+													<ExtendedTooltip name="УказанныйТипЗатратРасширеннаяПодсказка" id="245"/>
+													<Events>
+														<Event name="OnChange">ОпределятьТипЗатратПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="ТипЗатрат" id="246">
+													<DataPath>Объект.ТипЗатрат</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<ContextMenu name="ТипЗатратКонтекстноеМеню" id="247"/>
+													<ExtendedTooltip name="ТипЗатратРасширеннаяПодсказка" id="248"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЭлементОпределяетсяАналитикой4" id="249">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Элемент затрат аналитикой</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа элемент определяется аналитикой</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЭлементОпределяетсяАналитикой4РасширеннаяПодсказка" id="250"/>
+											<ChildItems>
+												<RadioButtonField name="ТипЗатратОпеределяетсяАналитикой" id="251">
+													<DataPath>ТипЗатратОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Тип затрат определяется аналитикой</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТипЗатратОпеределяетсяАналитикойКонтекстноеМеню" id="252"/>
+													<ExtendedTooltip name="ТипЗатратОпеределяетсяАналитикойРасширеннаяПодсказка" id="253"/>
+													<Events>
+														<Event name="OnChange">ОпределятьТипЗатратПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКатегорияАктива" id="285">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ГруппаКатегорияАктива</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа товары услуги</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКатегорияАктиваРасширеннаяПодсказка" id="286"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПризнаки6" id="287">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признаки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа признаки1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПризнаки6РасширеннаяПодсказка" id="288"/>
+									<ChildItems>
+										<CheckBoxField name="АналитикаПоКатегориямАктива" id="289">
+											<DataPath>Объект.АналитикаПоКатегориямАктива</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоКатегориямАктиваКонтекстноеМеню" id="290"/>
+											<ExtendedTooltip name="АналитикаПоКатегориямАктиваРасширеннаяПодсказка" id="291"/>
+											<Events>
+												<Event name="OnChange">АналитикаПоКатегориямАктиваПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаУказанныйЭлементКатегорияАктива" id="292">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указанная единица Категория актива</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа указанный Категория актива</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУказанныйЭлементКатегорияАктиваРасширеннаяПодсказка" id="293"/>
+											<ChildItems>
+												<RadioButtonField name="УказанныйКатегорияАктива" id="294">
+													<DataPath>КатегорияАктиваОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указаный категория актива:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УказанныйКатегорияАктиваКонтекстноеМеню" id="295"/>
+													<ExtendedTooltip name="УказанныйКатегорияАктиваРасширеннаяПодсказка" id="296"/>
+													<Events>
+														<Event name="OnChange">ОпределятьТоварыУслугиПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<Table name="КатегорииАктивов" id="308">
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<HorizontalStretch>false</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<FileDragMode>AsFile</FileDragMode>
+													<DataPath>Объект.КатегорииАктивов</DataPath>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="КатегорииАктивовКонтекстноеМеню" id="309"/>
+													<AutoCommandBar name="КатегорииАктивовКоманднаяПанель" id="310"/>
+													<ExtendedTooltip name="КатегорииАктивовРасширеннаяПодсказка" id="311"/>
+													<SearchStringAddition name="КатегорииАктивовСтрокаПоиска" id="312">
+														<AdditionSource>
+															<Item>КатегорииАктивов</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="КатегорииАктивовСтрокаПоискаКонтекстноеМеню" id="313"/>
+														<ExtendedTooltip name="КатегорииАктивовСтрокаПоискаРасширеннаяПодсказка" id="314"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="КатегорииАктивовСостояниеПросмотра" id="315">
+														<AdditionSource>
+															<Item>КатегорииАктивов</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="КатегорииАктивовСостояниеПросмотраКонтекстноеМеню" id="316"/>
+														<ExtendedTooltip name="КатегорииАктивовСостояниеПросмотраРасширеннаяПодсказка" id="317"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="КатегорииАктивовУправлениеПоиском" id="318">
+														<AdditionSource>
+															<Item>КатегорииАктивов</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="КатегорииАктивовУправлениеПоискомКонтекстноеМеню" id="319"/>
+														<ExtendedTooltip name="КатегорииАктивовУправлениеПоискомРасширеннаяПодсказка" id="320"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<LabelField name="КатегорииАктивовНомерСтроки" id="321">
+															<DataPath>Объект.КатегорииАктивов.LineNumber</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КатегорииАктивовНомерСтрокиКонтекстноеМеню" id="322"/>
+															<ExtendedTooltip name="КатегорииАктивовНомерСтрокиРасширеннаяПодсказка" id="323"/>
+														</LabelField>
+														<InputField name="КатегорииАктивовКатегорияАктива" id="324">
+															<DataPath>Объект.КатегорииАктивов.КатегорияАктива</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КатегорииАктивовКатегорияАктиваКонтекстноеМеню" id="325"/>
+															<ExtendedTooltip name="КатегорииАктивовКатегорияАктиваРасширеннаяПодсказка" id="326"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЭлементОпределяетсяАналитикой5" id="300">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Элемент затрат аналитикой</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа элемент определяется аналитикой</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЭлементОпределяетсяАналитикой5РасширеннаяПодсказка" id="301"/>
+											<ChildItems>
+												<RadioButtonField name="КатегорияАктиваОпеределяетсяАналитикой" id="302">
+													<DataPath>КатегорияАктиваОпеределяетсяАналитикой</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Категория актива определяется аналитикой:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="КатегорияАктиваОпеределяетсяАналитикойКонтекстноеМеню" id="303"/>
+													<ExtendedTooltip name="КатегорияАктиваОпеределяетсяАналитикойРасширеннаяПодсказка" id="304"/>
+													<Events>
+														<Event name="OnChange">КатегорияАктиваОпеределяетсяАналитикойПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа5" id="135">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="136"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСлева" id="376">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа слева</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа слева</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСлеваРасширеннаяПодсказка" id="377"/>
+									<ChildItems>
+										<CheckBoxField name="АналитикаПоВерсии" id="43">
+											<DataPath>Объект.АналитикаПоВерсии</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоВерсииКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="АналитикаПоВерсииРасширеннаяПодсказка" id="45"/>
+										</CheckBoxField>
+										<CheckBoxField name="АналитикаПоКонтрагентам" id="49">
+											<DataPath>Объект.АналитикаПоКонтрагентам</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоКонтрагентамКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="АналитикаПоКонтрагентамРасширеннаяПодсказка" id="51"/>
+										</CheckBoxField>
+										<CheckBoxField name="АналитикаПоКомпаниям" id="55">
+											<DataPath>Объект.АналитикаПоКомпаниям</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоКомпаниямКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="АналитикаПоКомпаниямРасширеннаяПодсказка" id="57"/>
+										</CheckBoxField>
+										<CheckBoxField name="АналитикаПоПериодам" id="61">
+											<DataPath>Объект.АналитикаПоПериодам</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоПериодамКонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="АналитикаПоПериодамРасширеннаяПодсказка" id="63"/>
+										</CheckBoxField>
+										<CheckBoxField name="АналитикаПоВалюте" id="37">
+											<DataPath>Объект.АналитикаПоВалюте</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоВалютеКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="АналитикаПоВалютеРасширеннаяПодсказка" id="39"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСправа" id="378">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа справа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа справа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСправаРасширеннаяПодсказка" id="379"/>
+									<ChildItems>
+										<CheckBoxField name="АналитикаПоРынкамСбыта" id="76">
+											<DataPath>Объект.АналитикаПоРынкамСбыта</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоРынкамСбытаКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="АналитикаПоРынкамСбытаРасширеннаяПодсказка" id="78"/>
+										</CheckBoxField>
+										<CheckBoxField name="АналитикаПоКаналамПродаж" id="100">
+											<DataPath>Объект.АналитикаПоКаналамПродаж</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоКаналамПродажКонтекстноеМеню" id="101"/>
+											<ExtendedTooltip name="АналитикаПоКаналамПродажРасширеннаяПодсказка" id="102"/>
+										</CheckBoxField>
+										<CheckBoxField name="АналитикаПоВидамДвижения" id="109">
+											<DataPath>Объект.АналитикаПоВидамДвижения</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоВидамДвиженияКонтекстноеМеню" id="110"/>
+											<ExtendedTooltip name="АналитикаПоВидамДвиженияРасширеннаяПодсказка" id="111"/>
+										</CheckBoxField>
+										<CheckBoxField name="АналитикаПоСценариям" id="67">
+											<DataPath>Объект.АналитикаПоСценариям</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АналитикаПоСценариямКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="АналитикаПоСценариямРасширеннаяПодсказка" id="69"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройкаБДДСКосвенные" id="370">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка БДДС (косвенные)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройка БДДСКосвенные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкаБДДСКосвенныеРасширеннаяПодсказка" id="371"/>
+					<ChildItems>
+						<Table name="НастройкаCFI" id="336">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.НастройкаCFI</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НастройкаCFIКонтекстноеМеню" id="337"/>
+							<AutoCommandBar name="НастройкаCFIКоманднаяПанель" id="338"/>
+							<ExtendedTooltip name="НастройкаCFIРасширеннаяПодсказка" id="339"/>
+							<SearchStringAddition name="НастройкаCFIСтрокаПоиска" id="340">
+								<AdditionSource>
+									<Item>НастройкаCFI</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкаCFIСтрокаПоискаКонтекстноеМеню" id="341"/>
+								<ExtendedTooltip name="НастройкаCFIСтрокаПоискаРасширеннаяПодсказка" id="342"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкаCFIСостояниеПросмотра" id="343">
+								<AdditionSource>
+									<Item>НастройкаCFI</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкаCFIСостояниеПросмотраКонтекстноеМеню" id="344"/>
+								<ExtendedTooltip name="НастройкаCFIСостояниеПросмотраРасширеннаяПодсказка" id="345"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкаCFIУправлениеПоиском" id="346">
+								<AdditionSource>
+									<Item>НастройкаCFI</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкаCFIУправлениеПоискомКонтекстноеМеню" id="347"/>
+								<ExtendedTooltip name="НастройкаCFIУправлениеПоискомРасширеннаяПодсказка" id="348"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НастройкаНомерСтроки" id="349">
+									<DataPath>Объект.НастройкаCFI.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НастройкаНомерСтрокиКонтекстноеМеню" id="350"/>
+									<ExtendedTooltip name="НастройкаНомерСтрокиРасширеннаяПодсказка" id="351"/>
+								</LabelField>
+								<InputField name="НастройкаЭлементЗатрат" id="352">
+									<DataPath>Объект.НастройкаCFI.ЭлементСправочника</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аналитика</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НастройкаЭлементЗатратКонтекстноеМеню" id="353"/>
+									<ExtendedTooltip name="НастройкаЭлементЗатратРасширеннаяПодсказка" id="354"/>
+									<Events>
+										<Event name="OnChange">НастройкаЭлементЗатратПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="НастройкаCFIВидДвижения" id="362">
+									<DataPath>Объект.НастройкаCFI.ВидДвижения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НастройкаCFIВидДвиженияКонтекстноеМеню" id="363"/>
+									<ExtendedTooltip name="НастройкаCFIВидДвиженияРасширеннаяПодсказка" id="364"/>
+								</InputField>
+								<InputField name="НастройкаЗнак" id="355">
+									<DataPath>Объект.НастройкаCFI.Знак</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НастройкаЗнакКонтекстноеМеню" id="356"/>
+									<ExtendedTooltip name="НастройкаЗнакРасширеннаяПодсказка" id="357"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СтатьиБюджетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.НастройкаCFI"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЭлементЗатратОпеределяетсяАналитикой" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент затрат опеределяется аналитикой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭлементДоходовОпеределяетсяАналитикой" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент доходов опеределяется аналитикой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТоварыПродукцияУслугиОпеределяетсяАналитикой" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары продукция услуги опеределяется аналитикой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидПерсоналаОпеределяетсяАналитикой" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид персонала опеределяется аналитикой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипЗатратОпеределяетсяАналитикой" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип затрат опеределяется аналитикой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КатегорияАктиваОпеределяетсяАналитикой" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория актива опеределяется аналитикой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

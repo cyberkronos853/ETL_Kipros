@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПолучитьДанные" id="30">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьДанные</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьДанныеРасширеннаяПодсказка" id="31"/>
+			</Button>
+			<Button name="ФормаЗаписатьДанные" id="32">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаписатьДанные</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Записать соответствия</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаписатьДанныеРасширеннаяПодсказка" id="33"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаТипДанных" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГруппаТипДанных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тип данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТипДанныхРасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<InputField name="ТаблицаИсточник" id="4">
+					<DataPath>ТаблицаИсточник</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник данных</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаблицаИсточникКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ТаблицаИсточникРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="База" id="7">
+					<Enabled>false</Enabled>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>База</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="БазаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ТипЭталона" id="34">
+					<DataPath>ТипЭталона</DataPath>
+					<ContextMenu name="ТипЭталонаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТипЭталонаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтборов" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отборов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отборов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборовРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="КоличествоЭлементов" id="23">
+					<DataPath>КоличествоЭлементов</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество элементов для загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КоличествоЭлементовКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КоличествоЭлементовРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаСоответствий" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаСоответствий</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаСоответствийКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ТаблицаСоответствийКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ТаблицаСоответствийРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ТаблицаСоответствийСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ТаблицаСоответствий</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСоответствийСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаСоответствийСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСоответствийСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ТаблицаСоответствий</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСоответствийСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТаблицаСоответствийСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаСоответствийУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ТаблицаСоответствий</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСоответствийУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ТаблицаСоответствийУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТипЭталона" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип эталона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ТипыЭталонов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаИсточник" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктураТаблицSQL</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСоответствий" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица соответствий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоЭлементов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество элементов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные для заполнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанные</Action>
+		</Command>
+		<Command name="ЗаписатьДанные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьДанные</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="3ce1245a-8355-4983-990c-f82adbf14b21">
+		<Name>БухгалтерскийБаланс</Name>
+		<Code/>
+		<Description>Бухгалтерский баланс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1f8839a1-5149-4bd4-bf2a-52dc1cb7ad8c">
+		<Name>Дивиденды</Name>
+		<Code/>
+		<Description>Дивиденды</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7b56aa51-2370-422c-8154-a98d06a7ce28">
+		<Name>КапитальныеЗатраты</Name>
+		<Code/>
+		<Description>Капитальные затраты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fc5206ca-b531-404d-9ee7-f9a10516e622">
+		<Name>КПНиНДС</Name>
+		<Code/>
+		<Description>КПН и НДС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0ca11f8f-4843-4889-8d82-3145e6064409">
+		<Name>ОперационныеДоходы</Name>
+		<Code/>
+		<Description>Операционные доходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1f331a3b-b644-44d0-9bb4-0208d5b21a1c">
+		<Name>ОперационныеРасходы</Name>
+		<Code/>
+		<Description>Операционные расходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cbbed1f7-7692-43bc-9635-ae4174375b83">
+		<Name>ОтчетОДвиженииДенежныхСредств</Name>
+		<Code/>
+		<Description>Отчет о движении денежных средств</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d6029d6b-afe7-4bac-921d-abb6e307da12">
+		<Name>ПрочиеДоходыИРасходы</Name>
+		<Code/>
+		<Description>Прочие доходы и расходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c1beebeb-b230-459a-8ca1-ea8bfd718718">
+		<Name>ФинансовыеДоходыИРасходы</Name>
+		<Code/>
+		<Description>Финансовые доходы и расходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="94dfd1f5-7be6-4ab0-8202-131d6b3a17e8">
+		<Name>ФОТ</Name>
+		<Code/>
+		<Description>Фонд оплаты труда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

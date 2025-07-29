@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="15e79a2e-f319-4d5b-85fc-2e2f5fc5f711">
+		<Name>ПервоеПолугодие</Name>
+		<Code>000000008</Code>
+		<Description>1 (первое) полугодие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9db39ac7-1280-4366-a58d-12b02dc5ccc8">
+		<Name>ПервыйКвартал</Name>
+		<Code>000000002</Code>
+		<Description>1 (первый)  квартал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a6519966-6cc8-404b-99f7-3aabd1c2b468">
+		<Name>ВтороеПолугодие</Name>
+		<Code>000000009</Code>
+		<Description>2 (второе)  полугодие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fc4f0b80-b18b-477f-8d6f-1b4e43d32852">
+		<Name>ВторойКвартал</Name>
+		<Code>000000003</Code>
+		<Description>2 (второй) квартал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6d507be9-aa34-4e35-83e1-830550e6e4b4">
+		<Name>ТретийКвартал</Name>
+		<Code>000000004</Code>
+		<Description>3 (третий)  квартал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="47a663fe-6260-460f-a674-74f338299d2a">
+		<Name>ЧетвертыйКвартал</Name>
+		<Code>000000005</Code>
+		<Description>4 (четвертый)  квартал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e16342b6-d1c1-43c2-bdab-ca2bd6fe626d">
+		<Name>ДевятьМесяцев</Name>
+		<Code>000000006</Code>
+		<Description>9 (девять) месяцев</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4afe2fd2-b9dc-4d92-93fa-ef3ceea59ea9">
+		<Name>Годовой</Name>
+		<Code>000000001</Code>
+		<Description>Год</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a7827278-e53c-49c6-a32c-d27017068234">
+		<Name>Произвольный</Name>
+		<Code>000000007</Code>
+		<Description>Произвольный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Подсказка" id="7">
+			<DataPath>Объект.Подсказка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодсказкаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодсказкаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="ПериодыПрочихПоказателей" id="10">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПериодыПрочихПоказателей</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПериодыПрочихПоказателейКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ПериодыПрочихПоказателейКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ПериодыПрочихПоказателейРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ПериодыПрочихПоказателейСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ПериодыПрочихПоказателей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПериодыПрочихПоказателейСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ПериодыПрочихПоказателейСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПериодыПрочихПоказателейСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ПериодыПрочихПоказателей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПериодыПрочихПоказателейСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПериодыПрочихПоказателейСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПериодыПрочихПоказателейУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ПериодыПрочихПоказателей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПериодыПрочихПоказателейУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ПериодыПрочихПоказателейУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПериодыПрочихПоказателейНомерСтроки" id="23">
+					<DataPath>Объект.ПериодыПрочихПоказателей.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПериодыПрочихПоказателейНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПериодыПрочихПоказателейНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ПериодыПрочихПоказателейПериод" id="26">
+					<DataPath>Объект.ПериодыПрочихПоказателей.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПериодыПрочихПоказателейПериодКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПериодыПрочихПоказателейПериодРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<CheckBoxField name="ПериодыПрочихПоказателейПодтвержденоАудитором" id="29">
+					<DataPath>Объект.ПериодыПрочихПоказателей.ПодтвержденоАудитором</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПериодыПрочихПоказателейПодтвержденоАудиторомКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПериодыПрочихПоказателейПодтвержденоАудиторомРасширеннаяПодсказка" id="31"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ТипыПрочихПоказателей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

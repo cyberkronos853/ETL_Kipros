@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОбъектыБазКВыгрузке</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектБазыКВыгрузке</dataPath>
+			<field>ОбъектБазыКВыгрузке</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект базы к выгрузке</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючСвязи</dataPath>
+			<field>КлючСвязи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектОписанияМетаданных</dataPath>
+			<field>ОбъектОписанияМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект описания метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектЕдиногоФорматаДанных</dataPath>
+			<field>ОбъектЕдиногоФорматаДанных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект единого формата данных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ОбъектыБазКВыгрузкеСтруктураФайла.ОбъектСтруктурыМетаданных КАК ОбъектОписанияМетаданных,
+	ОбъектыБазКВыгрузкеСтруктураФайла.КлючСвязи КАК КлючСвязи,
+	ОбъектыБазКВыгрузкеСтруктураФайла.Ссылка.ОбъектЕдиногоФормата КАК ОбъектЕдиногоФорматаДанных,
+	ОбъектыБазКВыгрузкеСтруктураФайла.Ссылка КАК ОбъектБазыКВыгрузке
+ИЗ
+	Справочник.ОбъектыБазКВыгрузке.СтруктураФайла КАК ОбъектыБазКВыгрузкеСтруктураФайла
+ГДЕ
+	НЕ &amp;База = ЗНАЧЕНИЕ(Справочник.Базы.ПустаяСсылка)
+	И ОбъектыБазКВыгрузкеСтруктураФайла.Ссылка.Владелец = &amp;База
+	И ВЫБОР
+			КОГДА НЕ &amp;Ссылка = ЗНАЧЕНИЕ(Справочник.СтруктураМетаданных.ПустаяСсылка)
+				ТОГДА ОбъектыБазКВыгрузкеСтруктураФайла.ОбъектСтруктурыМетаданных В ИЕРАРХИИ (&amp;Ссылка)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ 
+//	И НЕ ОбъектыБазКВыгрузкеСтруктураФайла.Ссылка.ОбъектЕдиногоФормата.ВидТаблицы = ЗНАЧЕНИЕ(Перечисление.ВидыТаблицSQL.Перечисление)
+//ОБЪЕДИНИТЬ ВСЕ 
+//	
+//ВЫБРАТЬ
+//	ОбъектыБазКВыгрузке.ОбъектСтруктурыМетаданных КАК ОбъектОписанияМетаданных,
+//	неопределено КАК КлючСвязи,
+//	ОбъектыБазКВыгрузке.Ссылка.ОбъектЕдиногоФормата КАК ОбъектЕдиногоФорматаДанных,
+//	ОбъектыБазКВыгрузке.Ссылка КАК ОбъектБазыКВыгрузке
+//ИЗ
+//	Справочник.ОбъектыБазКВыгрузке КАК ОбъектыБазКВыгрузке
+//ГДЕ
+//	НЕ &amp;База = ЗНАЧЕНИЕ(Справочник.Базы.ПустаяСсылка)
+//	И ОбъектыБазКВыгрузке.Владелец = &amp;База
+//	//И ВЫБОР
+//	//		КОГДА НЕ &amp;Ссылка = ЗНАЧЕНИЕ(Справочник.СтруктураМетаданных.ПустаяСсылка)
+//	//			ТОГДА ОбъектыБазКВыгрузке.ОбъектСтруктурыМетаданных В ИЕРАРХИИ (&amp;Ссылка)
+//	//		ИНАЧЕ ИСТИНА
+//	//	КОНЕЦ 
+//	И ОбъектыБазКВыгрузке.ОбъектЕдиногоФормата.ВидТаблицы = ЗНАЧЕНИЕ(Перечисление.ВидыТаблицSQL.Перечисление)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ОбъектБазыКВыгрузке</dataPath>
+		<expression>Неопределено</expression>
+		<group>ОбъектОписанияМетаданных</group>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъектБазыКВыгрузке</dataPath>
+		<expression>ОбъектБазыКВыгрузке</expression>
+		<group>ОбъектОписанияМетаданных Иерархия</group>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъектЕдиногоФорматаДанных</dataPath>
+		<expression>Неопределено</expression>
+		<group>ОбъектОписанияМетаданных</group>
+	</totalField>
+	<totalField>
+		<dataPath>ОбъектЕдиногоФорматаДанных</dataPath>
+		<expression>ОбъектЕдиногоФорматаДанных</expression>
+		<group>ОбъектОписанияМетаданных Иерархия</group>
+	</totalField>
+	<parameter>
+		<name>База</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>База</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Базы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Ссылка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ссылка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтруктураМетаданных</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектБазыКВыгрузке</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектЕдиногоФорматаДанных</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>База</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>e5e0c9c9-34b1-4192-997d-59da7549bfb1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Ссылка</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.СтруктураМетаданных.ПустаяСсылка</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ОбъектОписанияМетаданных</dcsset:field>
+						<dcsset:groupType>HierarchyOnly</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ОбъектОписанияМетаданных</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>КлючСвязи</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

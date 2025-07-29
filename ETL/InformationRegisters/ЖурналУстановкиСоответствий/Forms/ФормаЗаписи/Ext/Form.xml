@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Закрыть" id="28">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="29"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Документ" id="34">
+			<DataPath>Запись.Документ</DataPath>
+			<ContextMenu name="ДокументКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Событие" id="4">
+			<DataPath>Запись.Событие</DataPath>
+			<ContextMenu name="СобытиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СобытиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ГруппаПериод" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="7">
+					<DataPath>Запись.ДатаНачала</DataPath>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="10">
+					<DataPath>Запись.ДатаОкончания</DataPath>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДлительность" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа длительность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа длительность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДлительностьРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<InputField name="Длительность" id="13">
+					<DataPath>Запись.Длительность</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность (сек)</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДлительностьКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДлительностьРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ДлительностьСтрока" id="19">
+					<DataPath>Запись.ДлительностьСтрока</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ДлительностьСтрокаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДлительностьСтрокаРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОписаниеОшибки" id="16">
+			<DataPath>Запись.ОписаниеОшибки</DataPath>
+			<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОписаниеОшибкиРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<TextDocumentField name="Информация" id="22">
+			<DataPath>Запись.Информация</DataPath>
+			<ContextMenu name="ИнформацияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИнформацияРасширеннаяПодсказка" id="24"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЖурналУстановкиСоответствий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Subsystem uuid="28f3c66a-3979-4d1d-8b64-7eb9e6c3cac8">
+		<Properties>
+			<Name>ETL</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ETL</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Базы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОбъектыКВыгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СчетУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОтчетыКВыгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОтчетыКВыгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Обработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗапускЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаданияНаВыгрузкуОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаданияНаПовторнуюВыгрузку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбменSQL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбменFTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗакрытыйПериодВыгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СправочникиСтороннихСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналОбменаДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УведомленияОСобытияхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыВнешнихОбработок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РассылкаУведомленийОСобытияхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗапросыНаСверку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиныйФорматДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОбъектыБазКВыгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановкаОбъектовКПовторнойВыгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтрольДанныхОСВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОсновныеНастройкиОбмена</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ОписаниеМетаданных</Subsystem>
+			<Subsystem>ЗагрузкаДанных</Subsystem>
+			<Subsystem>ЗапросыДанных</Subsystem>
+			<Subsystem>ФорматДанных</Subsystem>
+			<Subsystem>Настройки</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

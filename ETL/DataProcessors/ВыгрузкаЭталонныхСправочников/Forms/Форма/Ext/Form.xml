@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыгрузить" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выгрузить</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ВыгрузитьНастройкиОтчетов" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыгрузитьНастройкиОтчетов</CommandName>
+				<ExtendedTooltip name="ВыгрузитьНастройкиОтчетовРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Button name="ВыгрузитьCFI" id="5">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.ВыгрузитьCFI</CommandName>
+			<ExtendedTooltip name="ВыгрузитьCFIРасширеннаяПодсказка" id="6"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаЭталонныхСправочников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выгрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+		<Command name="ВыгрузитьНастройкиОтчетов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить настройки отчетов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить настройки отчетов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьНастройкиОтчетов</Action>
+		</Command>
+		<Command name="ВыгрузитьCFI" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить CFI в BW_AMD_COPY</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить CFI</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьCFI</Action>
+		</Command>
+	</Commands>
+</Form>

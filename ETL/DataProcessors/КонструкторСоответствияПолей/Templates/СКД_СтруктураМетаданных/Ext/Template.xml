@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ТипыМетаданных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипМетаданных</dataPath>
+			<field>ТипМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СтруктураМетаданных.Ссылка КАК ТипМетаданных
+ИЗ
+	Справочник.СтруктураМетаданных КАК СтруктураМетаданных
+ГДЕ
+	НЕ &amp;База = ЗНАЧЕНИЕ(Справочник.Базы.ПустаяСсылка)
+	И СтруктураМетаданных.Владелец = &amp;База
+	И ВЫБОР
+			КОГДА НЕ &amp;ОбъектОписанияМетаданных = ЗНАЧЕНИЕ(Справочник.СтруктураМетаданных.ПустаяСсылка)
+				ТОГДА СтруктураМетаданных.Ссылка В ИЕРАРХИИ (&amp;ОбъектОписанияМетаданных)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И НЕ СтруктураМетаданных.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.ПустаяСсылка)
+	И НЕ СтруктураМетаданных.Тип В (ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.Булево), ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.Число), ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.Строка), ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.ХранилищеЗначения), ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.Дата), ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.УникальныйИдентификатор))
+	И НЕ СтруктураМетаданных.ПометкаУдаления
+	И НЕ СтруктураМетаданных.Ссылка.Тип В ИЕРАРХИИ(&amp;СписокНедоступныхТипов)</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ВидыМетаданных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидМетаданных</dataPath>
+			<field>ВидМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Ссылка КАК ВидМетаданных,
+	Родитель КАК Родитель	
+ИЗ
+	Справочник.СтруктураМетаданных КАК СтруктураМетаданных
+ГДЕ  
+	НЕ &amp;База = ЗНАЧЕНИЕ(Справочник.Базы.ПустаяСсылка) И Владелец = &amp;База
+	И ВЫБОР КОГДА НЕ &amp;ОбъектОписанияМетаданных = ЗНАЧЕНИЕ(Справочник.СтруктураМетаданных.ПустаяСсылка) ТОГДА Ссылка В ИЕРАРХИИ (&amp;ОбъектОписанияМетаданных) ИНАЧЕ ИСТИНА КОНЕЦ	
+	И Тип = ЗНАЧЕНИЕ(Перечисление.ТипыОбъектов.ПустаяСсылка)</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>РеквизитыТабличныхЧастей</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТабличнаяЧасть</dataPath>
+			<field>ТабличнаяЧасть</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличная часть</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипМетаданных</dataPath>
+			<field>ТипМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеквизитТЧ</dataPath>
+			<field>РеквизитТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизит ТЧ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Ссылка КАК РеквизитТЧ,
+	Родитель КАК ТабличнаяЧасть,	
+	Родитель.Родитель КАК ТипМетаданных	
+ИЗ
+	Справочник.СтруктураМетаданных КАК СтруктураМетаданных
+ГДЕ  
+	НЕ &amp;База = ЗНАЧЕНИЕ(Справочник.Базы.ПустаяСсылка) И Владелец = &amp;База
+	И ВЫБОР КОГДА НЕ &amp;ОбъектОписанияМетаданных = ЗНАЧЕНИЕ(Справочник.СтруктураМетаданных.ПустаяСсылка) ТОГДА Ссылка В ИЕРАРХИИ (&amp;ОбъектОписанияМетаданных) ИНАЧЕ ИСТИНА КОНЕЦ	
+	И Родитель.Вид = ЗНАЧЕНИЕ(Перечисление.ВидыСвойств.ТабличнаяЧасть)	
+	И Вид = ЗНАЧЕНИЕ(Перечисление.ВидыСвойств.Реквизит)
+</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>ТипыМетаданных</sourceDataSet>
+		<destinationDataSet>ВидыМетаданных</destinationDataSet>
+		<sourceExpression>ТипМетаданных</sourceExpression>
+		<destinationExpression>Родитель</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>ВидыМетаданных</sourceDataSet>
+		<destinationDataSet>РеквизитыТабличныхЧастей</destinationDataSet>
+		<sourceExpression>ВидМетаданных</sourceExpression>
+		<destinationExpression>ТабличнаяЧасть</destinationExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>Приоритет</dataPath>
+		<expression>ВЫБОР КОГДА ВидМетаданных.Вид = ЗНАЧЕНИЕ(Перечисление.ВидыСвойств.Свойство) ТОГДА 0 КОГДА ВидМетаданных.Вид = ЗНАЧЕНИЕ(Перечисление.ВидыСвойств.СтандартныйРеквизит) ТОГДА 1 КОГДА ВидМетаданных.Вид = ЗНАЧЕНИЕ(Перечисление.ВидыСвойств.Реквизит) ТОГДА 2 КОГДА ВидМетаданных.Вид = ЗНАЧЕНИЕ(Перечисление.ВидыСвойств.ТабличнаяЧасть) ТОГДА 3 ИНАЧЕ 999 КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Приоритет</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ТипМетаданныхТипСиноним</dataPath>
+		<expression>ПРЕДСТАВЛЕНИЕ(ТипМетаданных.Тип)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип метаданных тип синоним</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВидМетаданныхВидСиноним</dataPath>
+		<expression>ПРЕДСТАВЛЕНИЕ(ВидМетаданных.Вид)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид метаданных вид синоним</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>База</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>База</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Базы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ОбъектОписанияМетаданных</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объект описания метаданных</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтруктураМетаданных</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СписокНедоступныхТипов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Список недоступных типов</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ТипыОбъектов</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОбъектов.ПланСчетов</value>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОбъектов.РегистрБухгалтерии</value>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОбъектов.РегистрРасчета</value>
+		<useRestriction>true</useRestriction>
+		<availableValue>
+			<value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОбъектов.ПланСчетов</value>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОбъектов.РегистрБухгалтерии</value>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОбъектов.РегистрРасчета</value>
+		</availableValue>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>База</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>d860a593-d8fc-48c1-9f10-8bad8ae36b9a</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ОбъектОписанияМетаданных</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.СтруктураМетаданных.ПустаяСсылка</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТипМетаданных.Тип</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТипМетаданныхТипСиноним</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>ТипМетаданных.Тип</dcsset:field>
+						<dcsset:orderType>Asc</dcsset:orderType>
+					</dcsset:item>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТипМетаданных</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТипМетаданных.Синоним</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ТипМетаданных</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Приоритет</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидМетаданных.Вид</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидМетаданныхВидСиноним</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemField">
+								<dcsset:field>Приоритет</dcsset:field>
+								<dcsset:orderType>Asc</dcsset:orderType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:OrderItemField">
+								<dcsset:field>ВидМетаданных.Вид</dcsset:field>
+								<dcsset:orderType>Asc</dcsset:orderType>
+							</dcsset:item>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ВидМетаданных</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ВидМетаданных.Синоним</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>ВидМетаданных</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>РеквизитТЧ</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>РеквизитТЧ.Синоним</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

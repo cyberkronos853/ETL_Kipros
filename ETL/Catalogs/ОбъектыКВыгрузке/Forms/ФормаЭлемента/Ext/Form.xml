@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранить" id="66">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Сохранить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранит файл формата</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="67"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="16">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="18">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>SQL</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<InputField name="НаименованиеТаблицыSQL" id="58">
+							<DataPath>Объект.НаименованиеТаблицыSQL</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="НаименованиеТаблицыSQLКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="НаименованиеТаблицыSQLРасширеннаяПодсказка" id="60"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="Выгружать" id="36">
+					<DataPath>Объект.Выгружать</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыгружатьКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ВыгружатьРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТипыБазы" id="39">
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ТипыБазы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТипыБазыКонтекстноеМеню" id="40"/>
+			<AutoCommandBar name="ТипыБазыКоманднаяПанель" id="41"/>
+			<ExtendedTooltip name="ТипыБазыРасширеннаяПодсказка" id="42"/>
+			<SearchStringAddition name="ТипыБазыСтрокаПоиска" id="43">
+				<AdditionSource>
+					<Item>ТипыБазы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТипыБазыСтрокаПоискаКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ТипыБазыСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТипыБазыСостояниеПросмотра" id="46">
+				<AdditionSource>
+					<Item>ТипыБазы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТипыБазыСостояниеПросмотраКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ТипыБазыСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТипыБазыУправлениеПоиском" id="49">
+				<AdditionSource>
+					<Item>ТипыБазы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТипыБазыУправлениеПоискомКонтекстноеМеню" id="50"/>
+				<ExtendedTooltip name="ТипыБазыУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТипыБазыНомерСтроки" id="52">
+					<DataPath>Объект.ТипыБазы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипыБазыНомерСтрокиКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ТипыБазыНомерСтрокиРасширеннаяПодсказка" id="54"/>
+				</LabelField>
+				<InputField name="ТипыБазыТипБазы" id="55">
+					<DataPath>Объект.ТипыБазы.ТипБазы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипыБазыТипБазыКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ТипыБазыТипБазыРасширеннаяПодсказка" id="57"/>
+					<Events>
+						<Event name="ChoiceProcessing">ТипыБазыТипБазыОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОбъектыКВыгрузке</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АдресФайла" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Сохранить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

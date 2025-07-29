@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WebService uuid="2ddbe3b6-43a7-4a01-9cbb-83e408feb0c8">
+		<Properties>
+			<Name>EtalonRefSyncEx</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Etalon ref sync ex</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Namespace>http://EtalonRefSyncEx</Namespace>
+			<XDTOPackages>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage.ПакетXDTO</xr:Value>
+				</xr:Item>
+			</XDTOPackages>
+			<DescriptorFileName>ws2.1cws</DescriptorFileName>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<Operation uuid="0436aa2c-0441-4faf-99fb-ff83e7ac33c4">
+				<Properties>
+					<Name>SetRequest1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set request1</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetRequest</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="72c0a884-acfd-46b5-9f71-f3da81cb3032">
+						<Properties>
+							<Name>aDocRequest</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>A doc request</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://EtalonRefSyncEx">d8p1:aDocRequest</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="fbe976bd-0059-4cfe-93b5-f06d955d0121">
+				<Properties>
+					<Name>GetRequestResult1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get request result1</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetRequestResult</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="bc02aa50-d60c-4894-a4cb-c53422f0e90b">
+						<Properties>
+							<Name>Number</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Number</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="db394322-96c4-432d-a35e-5ddd973ebc95">
+				<Properties>
+					<Name>GetReference1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get reference1</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfReference</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReference</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="462b831a-e7a3-428c-a699-17841e8429ae">
+						<Properties>
+							<Name>Reference</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Reference</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="4b99098f-8fe3-4f23-8641-c735b2c6f14d">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="dd353e78-5e4a-42f2-9a04-c57d44fbd405">
+				<Properties>
+					<Name>GetReportAnalysis1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get report analysis1</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://EtalonRefSyncEx">d6p1:ArrayOfAnalysis</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetReport</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="a19a9bf7-0312-4713-90fa-83328513fb64">
+						<Properties>
+							<Name>Data1</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data1</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="27dc6289-489d-4ad6-8264-cbe492e21c80">
+						<Properties>
+							<Name>Data2</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data2</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:date</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="720e81d1-f3a7-4ea3-b39a-8e10bdd80aed">
+						<Properties>
+							<Name>Base</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Base</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+		</ChildObjects>
+	</WebService>
+</MetaDataObject>

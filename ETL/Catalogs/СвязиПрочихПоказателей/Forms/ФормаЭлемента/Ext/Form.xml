@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Владелец" id="29">
+			<DataPath>Объект.Owner</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="31"/>
+			<Events>
+				<Event name="OnChange">ВладелецПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Показатель" id="7">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПоказательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПоказательРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Pages name="Основная" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<Page name="ГруппаСтатьиБюджета" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статьи бюджета</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа статьи бюджета</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтатьиБюджетаРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<Table name="СтатьиБюджета" id="10">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СтатьиБюджета</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтатьиБюджетаКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="СтатьиБюджетаКоманднаяПанель" id="12"/>
+							<ExtendedTooltip name="СтатьиБюджетаРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="СтатьиБюджетаСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>СтатьиБюджета</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтатьиБюджетаСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="СтатьиБюджетаСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтатьиБюджетаСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>СтатьиБюджета</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтатьиБюджетаСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="СтатьиБюджетаСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтатьиБюджетаУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>СтатьиБюджета</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтатьиБюджетаУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="СтатьиБюджетаУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">СтатьиБюджетаПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СтатьиБюджетаНомерСтроки" id="23">
+									<DataPath>Объект.СтатьиБюджета.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтатьиБюджетаНомерСтрокиКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="СтатьиБюджетаНомерСтрокиРасширеннаяПодсказка" id="25"/>
+								</LabelField>
+								<InputField name="СтатьиБюджетаСтатьяБюджета" id="26">
+									<DataPath>Объект.СтатьиБюджета.СтатьяБюджета</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтатьиБюджетаСтатьяБюджетаКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="СтатьиБюджетаСтатьяБюджетаРасширеннаяПодсказка" id="28"/>
+									<Events>
+										<Event name="StartChoice">СтатьиБюджетаСтатьяБюджетаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="СтатьиБюджетаКатегорияАктивов" id="57">
+									<DataPath>Объект.СтатьиБюджета.КатегорияАктивов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтатьиБюджетаКатегорияАктивовКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СтатьиБюджетаКатегорияАктивовРасширеннаяПодсказка" id="59"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВидыДвижений" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды движений</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа виды движений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВидыДвиженийРасширеннаяПодсказка" id="56"/>
+					<ChildItems>
+						<Table name="ВидыДвижения" id="32">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ВидыДвижения</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВидыДвиженияКонтекстноеМеню" id="33"/>
+							<AutoCommandBar name="ВидыДвиженияКоманднаяПанель" id="34"/>
+							<ExtendedTooltip name="ВидыДвиженияРасширеннаяПодсказка" id="35"/>
+							<SearchStringAddition name="ВидыДвиженияСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>ВидыДвижения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыДвиженияСтрокаПоискаКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ВидыДвиженияСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВидыДвиженияСостояниеПросмотра" id="39">
+								<AdditionSource>
+									<Item>ВидыДвижения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыДвиженияСостояниеПросмотраКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ВидыДвиженияСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВидыДвиженияУправлениеПоиском" id="42">
+								<AdditionSource>
+									<Item>ВидыДвижения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыДвиженияУправлениеПоискомКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ВидыДвиженияУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ВидыДвиженияПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ВидыДвиженияНомерСтроки" id="45">
+									<DataPath>Объект.ВидыДвижения.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыДвиженияНомерСтрокиКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ВидыДвиженияНомерСтрокиРасширеннаяПодсказка" id="47"/>
+								</LabelField>
+								<InputField name="ВидыДвиженияВидДвижения" id="48">
+									<DataPath>Объект.ВидыДвижения.ВидДвижения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыДвиженияВидДвиженияКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ВидыДвиженияВидДвиженияРасширеннаяПодсказка" id="50"/>
+								</InputField>
+								<InputField name="ВидыДвиженияСтатьяБюджета" id="60">
+									<DataPath>Объект.ВидыДвижения.СтатьяБюджета</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыДвиженияСтатьяБюджетаКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ВидыДвиженияСтатьяБюджетаРасширеннаяПодсказка" id="62"/>
+									<Events>
+										<Event name="StartChoice">ВидыДвиженияСтатьяБюджетаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСчета" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Cчета</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа счета</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСчетаРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<Table name="Счета" id="65">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Счета</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СчетаКонтекстноеМеню" id="66"/>
+							<AutoCommandBar name="СчетаКоманднаяПанель" id="67"/>
+							<ExtendedTooltip name="СчетаРасширеннаяПодсказка" id="68"/>
+							<SearchStringAddition name="СчетаСтрокаПоиска" id="69">
+								<AdditionSource>
+									<Item>Счета</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СчетаСтрокаПоискаКонтекстноеМеню" id="70"/>
+								<ExtendedTooltip name="СчетаСтрокаПоискаРасширеннаяПодсказка" id="71"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СчетаСостояниеПросмотра" id="72">
+								<AdditionSource>
+									<Item>Счета</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СчетаСостояниеПросмотраКонтекстноеМеню" id="73"/>
+								<ExtendedTooltip name="СчетаСостояниеПросмотраРасширеннаяПодсказка" id="74"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СчетаУправлениеПоиском" id="75">
+								<AdditionSource>
+									<Item>Счета</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СчетаУправлениеПоискомКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="СчетаУправлениеПоискомРасширеннаяПодсказка" id="77"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">СчетаПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СчетаНомерСтроки" id="78">
+									<DataPath>Объект.Счета.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СчетаНомерСтрокиКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="СчетаНомерСтрокиРасширеннаяПодсказка" id="80"/>
+								</LabelField>
+								<InputField name="СчетаСчет" id="81">
+									<DataPath>Объект.Счета.Счет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СчетаСчетКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="СчетаСчетРасширеннаяПодсказка" id="83"/>
+								</InputField>
+								<InputField name="СчетаТипДвижения" id="84">
+									<DataPath>Объект.Счета.ТипДвижения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СчетаТипДвиженияКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="СчетаТипДвиженияРасширеннаяПодсказка" id="86"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СвязиПрочихПоказателей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Бюджет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Бюджеты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

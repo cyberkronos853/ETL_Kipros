@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="124">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="125"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="10">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="База" id="4">
+					<DataPath>Запись.База</DataPath>
+					<ContextMenu name="БазаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<CheckBoxField name="Результат" id="7">
+					<DataPath>Запись.Результат</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РезультатКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="9"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПериод" id="139">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:NavigationColor</BackColor>
+			<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="140"/>
+			<ChildItems>
+				<InputField name="ДатаНачалаСтрокой" id="130">
+					<DataPath>Запись.ДатаНачалаСтрокой</DataPath>
+					<ContextMenu name="ДатаНачалаСтрокойКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="ДатаНачалаСтрокойРасширеннаяПодсказка" id="132"/>
+				</InputField>
+				<InputField name="ДатаОкончанияСтрокой" id="133">
+					<DataPath>Запись.ДатаОкончанияСтрокой</DataPath>
+					<ContextMenu name="ДатаОкончанияСтрокойКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="ДатаОкончанияСтрокойРасширеннаяПодсказка" id="135"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="тдДанныеПериода" id="136">
+			<DataPath>тдДанныеПериода</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="тдДанныеПериодаКонтекстноеМеню" id="137"/>
+			<ExtendedTooltip name="тдДанныеПериодаРасширеннаяПодсказка" id="138"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.РезультатыСверки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="тдДанныеПериода" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетОСВ</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетSQL</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетОМ</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОМ</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотДтОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотДтSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотДтОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотДтОМ</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотКтОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотКтSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотКтОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотКтОМ</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОМ</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетОСВ</dcsset:left>
+								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетSQL</dcsset:left>
+								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетОМ</dcsset:left>
+								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>AndGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокДтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокДтSQL</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокКтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокКтSQL</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОСВ</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокSQL</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>AndGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокДтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокДтОМ</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокКтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокКтОМ</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОСВ</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОМ</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>AndGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокКтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокКтSQL</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокДтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокДтSQL</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОСВ</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокSQL</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>AndGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокДтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокДтОМ</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокКтОСВ</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокКтОМ</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОСВ</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОМ</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотДтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотДтSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотДтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотДтОМ</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотКтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотКтSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотКтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотКтОМ</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетОСВ</dcsset:left>
+								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетSQL</dcsset:left>
+								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТЗ.СчетОМ</dcsset:left>
+								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотДтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотДтSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотДтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотДтОМ</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотКтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотКтSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.НачальныйОстатокОМ</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокSQL</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.КонечныйОстатокОМ</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЗ.ОборотКтОСВ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ТЗ.ОборотКтОМ</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF9900</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

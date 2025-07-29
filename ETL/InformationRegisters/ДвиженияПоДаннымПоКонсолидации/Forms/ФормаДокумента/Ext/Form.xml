@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="59">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата транзакции</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ДатаТранзакции" id="7">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаТранзакцииКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДатаТранзакцииРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ВидОперации" id="10">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидОперацииКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВидОперацииРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Организация" id="13">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Контрагент" id="16">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<CheckBoxField name="ВходитВГруппу" id="19">
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВходитВГруппуКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ВходитВГруппуРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<InputField name="Субхолдинг" id="22">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СубхолдингКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СубхолдингРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ПроцентВладения" id="25">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПроцентВладенияКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ПроцентВладенияРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ВалютаТранзакции" id="28">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВалютаТранзакцииКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ВалютаТранзакцииРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="СуммаТранзакции" id="31">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаТранзакцииКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="СуммаТранзакцииРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="СуммаТранзакцииВТенге" id="61">
+			<ContextMenu name="СуммаТранзакцииВТенгеКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="СуммаТранзакцииВТенгеРасширеннаяПодсказка" id="63"/>
+		</InputField>
+		<Table name="МетодыУчетаКонсолидации" id="37">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МетодыУчетаКонсолидацииКонтекстноеМеню" id="38"/>
+			<AutoCommandBar name="МетодыУчетаКонсолидацииКоманднаяПанель" id="39"/>
+			<ExtendedTooltip name="МетодыУчетаКонсолидацииРасширеннаяПодсказка" id="40"/>
+			<SearchStringAddition name="МетодыУчетаКонсолидацииСтрокаПоиска" id="41">
+				<AdditionSource>
+					<Item>МетодыУчетаКонсолидации</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МетодыУчетаКонсолидацииСтрокаПоискаКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="МетодыУчетаКонсолидацииСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МетодыУчетаКонсолидацииСостояниеПросмотра" id="44">
+				<AdditionSource>
+					<Item>МетодыУчетаКонсолидации</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МетодыУчетаКонсолидацииСостояниеПросмотраКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="МетодыУчетаКонсолидацииСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МетодыУчетаКонсолидацииУправлениеПоиском" id="47">
+				<AdditionSource>
+					<Item>МетодыУчетаКонсолидации</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МетодыУчетаКонсолидацииУправлениеПоискомКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="МетодыУчетаКонсолидацииУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="МетодыУчетаКонсолидацииНомерСтроки" id="50">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МетодыУчетаКонсолидацииНомерСтрокиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="МетодыУчетаКонсолидацииНомерСтрокиРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<InputField name="МетодыУчетаКонсолидацииПериметрКонсолидации" id="56">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МетодыУчетаКонсолидацииПериметрКонсолидацииКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="МетодыУчетаКонсолидацииПериметрКонсолидацииРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="МетодыУчетаКонсолидацииМетодУчетаФинансовойКонсодидации" id="53">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МетодыУчетаКонсолидацииМетодУчетаФинансовойКонсодидацииКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="МетодыУчетаКонсолидацииМетодУчетаФинансовойКонсодидацииРасширеннаяПодсказка" id="55"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комментарий" id="34">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="36"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecord.ДвиженияПоДаннымПоКонсолидации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

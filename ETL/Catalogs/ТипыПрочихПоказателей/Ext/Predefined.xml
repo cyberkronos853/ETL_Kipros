@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="b94dd73f-ebd7-48a8-a6d7-9ae516adaf9f">
+		<Name>Вид1</Name>
+		<Code>000000001</Code>
+		<Description>Вид 1</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03b34827-116c-4aa3-a387-257a954191cb">
+		<Name>Вид10</Name>
+		<Code>000000010</Code>
+		<Description>Вид 10</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8a2941c3-d20b-43e3-ad81-0f5cf08ff4dd">
+		<Name>Вид11</Name>
+		<Code>000000011</Code>
+		<Description>Вид 11</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="700783fb-88e5-4b5a-b5db-51cd67a4ddf0">
+		<Name>Вид12</Name>
+		<Code>000000012</Code>
+		<Description>Вид 12</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="76a76870-ceae-4dab-a089-4fd8322b38c7">
+		<Name>Вид13</Name>
+		<Code>000000013</Code>
+		<Description>Вид 13</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="26e61267-27b0-4e78-9a0b-0d68e0318356">
+		<Name>Вид14</Name>
+		<Code>000000014</Code>
+		<Description>Вид 14</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="918f0e7a-47b1-40e5-940a-cce91425bdef">
+		<Name>Вид15</Name>
+		<Code>000000015</Code>
+		<Description>Вид 15</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="27cd2b47-9bbf-44c2-a632-239aa386cce5">
+		<Name>Вид16</Name>
+		<Code>000000016</Code>
+		<Description>Вид 16</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bc4d0a6a-999e-4a73-bec1-a3561fc09315">
+		<Name>Вид17</Name>
+		<Code>000000017</Code>
+		<Description>Вид 17</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="782cf837-0800-47d6-b995-15a5070fe39a">
+		<Name>Вид18</Name>
+		<Code>000000018</Code>
+		<Description>Вид 18</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3d11b43f-f4ce-4181-a4a9-4c82cc88f434">
+		<Name>Вид19</Name>
+		<Code>000000019</Code>
+		<Description>Вид 19</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="76817662-217e-46c8-a9e0-b6d5d1eae138">
+		<Name>Вид2</Name>
+		<Code>000000002</Code>
+		<Description>Вид 2</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5072ef68-a252-492a-9508-e0ba1b1552f2">
+		<Name>Вид20</Name>
+		<Code>000000020</Code>
+		<Description>Вид 20</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ce6c054e-9991-4518-8968-6fff94b8e759">
+		<Name>Вид21</Name>
+		<Code>000000021</Code>
+		<Description>Вид 21</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="999eb634-09ff-4fde-9f1a-397b85b9cd80">
+		<Name>Вид22</Name>
+		<Code>000000022</Code>
+		<Description>Вид 22</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="51cbe9b1-124d-48ef-bf17-28fac851578b">
+		<Name>Вид23</Name>
+		<Code>000000023</Code>
+		<Description>Вид 23</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d341f988-7032-407d-a662-74093fc0d3fd">
+		<Name>Вид25</Name>
+		<Code>000000024</Code>
+		<Description>Вид 25</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6048d0b1-564b-4782-a9e1-dbd5fea6528d">
+		<Name>Вид26</Name>
+		<Code>000000025</Code>
+		<Description>Вид 26</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ab33d4c2-01c3-46e2-8d5b-dfd94a59d3d2">
+		<Name>Вид27</Name>
+		<Code>000000026</Code>
+		<Description>Вид 27</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c02e9446-1562-474d-9c01-5c96b0adca31">
+		<Name>Вид28</Name>
+		<Code>000000027</Code>
+		<Description>Вид 28</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2a03b998-1c13-473b-8c60-c54ce2124168">
+		<Name>Вид29</Name>
+		<Code>000000028</Code>
+		<Description>Вид 29</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2bfbe3fa-985f-47e5-93b4-009096ed1f5f">
+		<Name>Вид3</Name>
+		<Code>000000003</Code>
+		<Description>Вид 3</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6beba127-bd09-49b1-bc87-c1fd842c4bea">
+		<Name>Вид30</Name>
+		<Code>000000029</Code>
+		<Description>Вид 30</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="07ee89e5-f110-4955-85f0-2922b8b61a7e">
+		<Name>Вид4</Name>
+		<Code>000000004</Code>
+		<Description>Вид 4</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="15020c49-dc45-494b-b152-9f531d6138bb">
+		<Name>Вид5</Name>
+		<Code>000000005</Code>
+		<Description>Вид 5</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8084b784-e0e9-4502-aebe-6bdf12746681">
+		<Name>Вид6</Name>
+		<Code>000000006</Code>
+		<Description>Вид 6</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="28751e3f-f2e5-4656-868a-de54d59f217b">
+		<Name>Вид7</Name>
+		<Code>000000007</Code>
+		<Description>Вид 7</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="80f8cbf5-962a-44e3-8447-7cd18b892460">
+		<Name>Вид8</Name>
+		<Code>000000008</Code>
+		<Description>Вид 8</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="45cc3a54-1418-4d63-b274-2b6fd6c77e94">
+		<Name>Вид9</Name>
+		<Code>000000009</Code>
+		<Description>Вид 9</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

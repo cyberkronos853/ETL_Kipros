@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<CommandsVisibility>
+		<Command name="Document.УстановкаСоответствий.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УстановкаСоответствийСчетов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПроверкаНаОшибкиПоКонсолидации">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.УдаленныеЭталоны.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЖурналУстановкиСоответствий.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.РеквизитыЭталонов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СоответствияЭталонов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СоответствияСчетов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ИсторияУстановкиСоответствийСчетов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ИсторияУстановкиСоответствий.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExchangePlan.Эталоны.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТаблицыЭталоновДляРеструктуризации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаДанныхИзФайла.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СоответствияЭталонов.Command.ОткрытьФормуЗаполненияСоответствий">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.УстановкаСоответствий.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.УстановкаСоответствийСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CommonCommand.ПроверкаНаОшибкиПоКонсолидации">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.РеквизитыЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.СоответствияЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.СоответствияСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ИсторияУстановкиСоответствийСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ИсторияУстановкиСоответствий.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExchangePlan.Эталоны.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ТаблицыЭталоновДляРеструктуризации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.УстановкаСоответствий.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.УстановкаСоответствийСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПроверкаНаОшибкиПоКонсолидации">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ТипыЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.СпособыПодбораЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ЗначенияЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.НастройкиОтбораСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.УдаленныеЭталоны.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЖурналУстановкиСоответствий.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СтатистикаВыгрузкиЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СтатусСверкиОтчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.РеквизитыЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СоответствияЭталонов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СоответствияСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ИсторияУстановкиСоответствийСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ИсторияУстановкиСоответствий.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="ExchangePlan.Эталоны.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ТаблицыЭталоновДляРеструктуризации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+	</GroupsOrder>
+</CommandInterface>

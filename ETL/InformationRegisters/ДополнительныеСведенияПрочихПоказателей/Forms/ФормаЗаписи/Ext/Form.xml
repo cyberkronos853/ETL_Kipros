@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>ChangeHistory</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ВидПоказателя" id="4">
+			<DataPath>Запись.ВидПоказателя</DataPath>
+			<ContextMenu name="ВидПоказателяКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВидПоказателяРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Показатель" id="7">
+			<DataPath>Запись.Показатель</DataPath>
+			<ContextMenu name="ПоказательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПоказательРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Статьи" id="10">
+			<DataPath>Запись.Статьи</DataPath>
+			<ContextMenu name="СтатьиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СтатьиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ТипСтатьи" id="13">
+			<DataPath>Запись.ТипСтатьи</DataPath>
+			<ContextMenu name="ТипСтатьиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТипСтатьиРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ТипДвиженияСчета" id="16">
+			<DataPath>Запись.ТипДвиженияСчета</DataPath>
+			<ContextMenu name="ТипДвиженияСчетаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТипДвиженияСчетаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="СписокСчетовСтатейБюджета" id="19">
+			<DataPath>Запись.СписокСчетовСтатейБюджета</DataPath>
+			<ContextMenu name="СписокСчетовСтатейБюджетаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СписокСчетовСтатейБюджетаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ДополнительныеСведенияПрочихПоказателей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

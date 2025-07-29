@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ДобавитьЗаписи" id="49">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьЗаписи</CommandName>
+				<Font ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Добавить записи по базе</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ДобавитьЗаписиРасширеннаяПодсказка" id="50"/>
+			</Button>
+			<Button name="ФормаДобавитьЗаписиПоРегламентнойСверке" id="66">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьЗаписиПоРегламентнойСверке</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьЗаписиПоРегламентнойСверкеРасширеннаяПодсказка" id="67"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<HeightControlVariant>UseContentHeight</HeightControlVariant>
+			<HeaderHeight>2</HeaderHeight>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>true</AutoRefresh>
+			<AutoRefreshPeriod>10</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>true</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Период" id="16">
+					<DataPath>Список.Period</DataPath>
+					<TitleBackColor>style:TableFooterBackColor</TitleBackColor>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="GUID" id="19">
+					<DataPath>Список.GUID</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<TitleBackColor>style:TableFooterBackColor</TitleBackColor>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="GUIDКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="GUIDРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="База" id="22">
+					<DataPath>Список.База</DataPath>
+					<TitleBackColor>style:TableFooterBackColor</TitleBackColor>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="БазаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="Организация" id="60">
+					<DataPath>Список.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="62"/>
+				</LabelField>
+				<LabelField name="ОбъектСверки" id="25">
+					<DataPath>Список.ОбъектСверки</DataPath>
+					<TitleBackColor>style:TableFooterBackColor</TitleBackColor>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ОбъектСверкиКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ОбъектСверкиРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="Статус" id="28">
+					<DataPath>Список.Статус</DataPath>
+					<TitleBackColor>style:TableFooterBackColor</TitleBackColor>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<Font ref="style:NormalTextFont" faceName="Microsoft YaHei UI" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<PictureField name="ЕстьРасхождения" id="51">
+					<DataPath>Список.ЕстьРасхождения</DataPath>
+					<Enabled>false</Enabled>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть 
+расхождения</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<FixingInTable>Left</FixingInTable>
+					<ValuesPicture>
+						<xr:Ref>StdPicture.AppearanceCheckIcon</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+					</Border>
+					<ContextMenu name="ЕстьРасхожденияКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ЕстьРасхожденияРасширеннаяПодсказка" id="53"/>
+				</PictureField>
+				<LabelField name="ДатаСтатуса" id="54">
+					<DataPath>Список.ДатаСтатуса</DataPath>
+					<ContextMenu name="ДатаСтатусаКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ДатаСтатусаРасширеннаяПодсказка" id="56"/>
+				</LabelField>
+				<CheckBoxField name="ВыполнитьПолнуюСверку" id="63">
+					<DataPath>Список.ВыполнитьПолнуюСверку</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполнитьПолнуюСверкуКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ВыполнитьПолнуюСверкуРасширеннаяПодсказка" id="65"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыполнитьПодробнуюСверку" id="57">
+					<DataPath>Список.ВыполнитьПодробнуюСверку</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подробная сверка</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполнитьПодробнуюСверкуКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ВыполнитьПодробнуюСверкуРасширеннаяПодсказка" id="59"/>
+				</CheckBoxField>
+				<LabelField name="Примечание" id="31">
+					<DataPath>Список.Примечание</DataPath>
+					<Visible>false</Visible>
+					<TitleBackColor>style:TableFooterBackColor</TitleBackColor>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="true" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ПримечаниеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЗапросыНаСверку</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ВыполнитьПолнуюСверку</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+							<dcsset:userSettingID>076fcd35-206e-4d26-8559-90c68bb87188</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">База</dcsset:left>
+							<dcsset:comparisonType>InList</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:ValueListType">
+								<v8:valueType/>
+								<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+							</dcsset:right>
+							<dcsset:userSettingID>5b283dd8-ae5f-426b-a860-fbed3add21ff</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ОбъектСверки</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>4cb31fc3-200d-47cb-9a48-be50c36bdf0e</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Статус</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыСверкиДанных.Выполнен</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:SpringGreen</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:SpringGreen</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Microsoft YaHei UI" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Статус</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыСверкиДанных.Обрабатывается</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Yellow</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Gold</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Microsoft YaHei UI" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Статус</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыСверкиДанных.Ошибка</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightSalmon</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Microsoft YaHei UI" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьЗаписи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить записи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЗаписи</Action>
+		</Command>
+		<Command name="ДобавитьЗаписиПоРегламентнойСверке" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить записи по регламентной сверке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить записи по регламентной сверке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЗаписиПоРегламентнойСверке</Action>
+		</Command>
+	</Commands>
+</Form>

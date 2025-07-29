@@ -1,0 +1,524 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://EtalonRefSyncEx">
+	<objectType name="aDocRequest">
+		<property name="Number" type="xs:string" nillable="true"/>
+		<property name="Date" type="xs:dateTime" nillable="true"/>
+		<property name="RefType" type="xs:string" nillable="true"/>
+		<property name="RefName" type="xs:string" nillable="true"/>
+		<property name="RefParentCode" type="xs:string" nillable="true"/>
+		<property name="UserName" type="xs:string" nillable="true"/>
+		<property name="UserPhone" type="xs:string" nillable="true"/>
+		<property name="UserEMail" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfReference">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="Reference" type="d3p1:Reference" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Reference">
+		<property name="ID" type="xs:string" nillable="true"/>
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="IsParent" type="xs:boolean" nillable="true"/>
+		<property name="ParentCode" type="xs:string" nillable="true"/>
+		<property name="ParentName" type="xs:string" nillable="true"/>
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="ParentGUID" type="xs:string" nillable="true"/>
+		<property name="OwnerGUID" type="xs:string" nillable="true"/>
+		<property name="ParentID" type="xs:string" nillable="true"/>
+		<property name="NotActived" type="xs:boolean" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfReport">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ReportLine" type="d3p1:ReportLine" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ReportLine">
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="Account" type="xs:string" nillable="true"/>
+		<property name="AccountList" type="xs:string" nillable="true"/>
+		<property name="ParentGUID" type="xs:string" nillable="true"/>
+		<property name="ParentCode" type="xs:string" nillable="true"/>
+		<property name="Amount" type="xs:double" nillable="true"/>
+		<property name="BalAmount" type="xs:double" nillable="true"/>
+		<property name="CodeBalance" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfAnalysis">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ReportLineAnalysis" type="d3p1:ReportLineAnalysis" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ReportLineAnalysis">
+		<property name="Account" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CorAccount" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="AmountDt" type="xs:double" nillable="true"/>
+		<property name="AmountKt" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfAccountMovements">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ReportLineAccountMovements" type="d3p1:ReportLineAccountMovements" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ReportLineAccountMovements">
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="RecorderGUID" type="xs:string" nillable="true"/>
+		<property name="Account" type="xs:string" nillable="true"/>
+		<property name="CorAccount" type="xs:string" nillable="true"/>
+		<property name="Amount" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="aDocPlan">
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="Number" type="xs:string" nillable="true"/>
+		<property name="Date" type="xs:dateTime" nillable="true"/>
+		<property name="PlanPeriod" type="xs:dateTime" nillable="true"/>
+		<property name="Comment" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="Lines" type="d3p1:PlanLine" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesInvestProject" type="d3p1:PlanLineInvestProject" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesCredit" type="d3p1:PlanLineCredit" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesDZ" type="d3p1:PlanLineDZ" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesDocKPI" type="d3p1:LineDocKPI" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="Version" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="PlanLine">
+		<property name="ReportlineGUID" type="xs:string" nillable="true"/>
+		<property name="RevenueGUID" type="xs:string" nillable="true"/>
+		<property name="ExpenditureGUID" type="xs:string" nillable="true"/>
+		<property name="AssetCategoryGUID" type="xs:string" nillable="true"/>
+		<property name="NomenclatureGroupGUID" type="xs:string" nillable="true"/>
+		<property name="NomenclatureGroupLevel2GUID" type="xs:string" nillable="true"/>
+		<property name="TypeOfMovementGUID" type="xs:string" nillable="true"/>
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="Amount" type="xs:double" nillable="true"/>
+		<property name="AllYear" type="xs:boolean" nillable="true"/>
+		<property name="CounterpartyINN" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="PlanLineInvestProject">
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="AllYear" type="xs:boolean" nillable="true"/>
+		<property name="ProjectDescription" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="TypeOfInvestmentGUID" type="xs:string" nillable="true"/>
+		<property name="AssetCategoryGUID" type="xs:string" nillable="true"/>
+		<property name="ProjectCustomerGUID" type="xs:string" nillable="true"/>
+		<property name="Currency" type="xs:string" nillable="true"/>
+		<property name="UnitPrice" type="xs:double" nillable="true"/>
+		<property name="Volume" type="xs:double" nillable="true"/>
+		<property name="AmountExpenses" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="PlanLineCredit">
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="AllYear" type="xs:boolean" nillable="true"/>
+		<property name="ContractNumber" type="xs:string" nillable="true"/>
+		<property name="ContractDate" type="xs:dateTime" nillable="true"/>
+		<property name="MaturityDate" type="xs:dateTime" nillable="true"/>
+		<property name="CounterpartyINN" type="xs:string" nillable="true"/>
+		<property name="DebtToolGUID" type="xs:string" nillable="true"/>
+		<property name="Currency" type="xs:string" nillable="true"/>
+		<property name="Indexing" type="xs:boolean" nillable="true"/>
+		<property name="ExchangeRateOnDate" type="xs:double" nillable="true"/>
+		<property name="LoanTerms" type="xs:double" nillable="true"/>
+		<property name="InterestRate" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PurposeOfFundsGUID" type="xs:string" nillable="true"/>
+		<property name="LoanLenderTypeGUID" type="xs:string" nillable="true"/>
+		<property name="ContractSumm" type="xs:double" nillable="true"/>
+		<property name="AmountOfDisbursement" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestBalance" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountByPeriod" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestByPeriod" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountEndBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestEndBalance" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="PlanLineDZ">
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="AllYear" type="xs:boolean" nillable="true"/>
+		<property name="ContractNumber" type="xs:string" nillable="true"/>
+		<property name="ContractDate" type="xs:dateTime" nillable="true"/>
+		<property name="MaturityDate" type="xs:dateTime" nillable="true"/>
+		<property name="CounterpartyINN" type="xs:string" nillable="true"/>
+		<property name="DebtToolGUID" type="xs:string" nillable="true"/>
+		<property name="Currency" type="xs:string" nillable="true"/>
+		<property name="Indexing" type="xs:boolean" nillable="true"/>
+		<property name="ExchangeRateOnDate" type="xs:double" nillable="true"/>
+		<property name="LoanTerms" type="xs:double" nillable="true"/>
+		<property name="InterestRate" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PurposeOfFundsGUID" type="xs:string" nillable="true"/>
+		<property name="LoanLenderTypeGUID" type="xs:string" nillable="true"/>
+		<property name="ContractSumm" type="xs:double" nillable="true"/>
+		<property name="AmountOfDisbursement" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestBalance" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountByPeriod" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestByPeriod" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountEndBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestEndBalance" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="aDocFact">
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="Number" type="xs:string" nillable="true"/>
+		<property name="Date" type="xs:dateTime" nillable="true"/>
+		<property name="Comment" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="FactPeriod" type="xs:dateTime" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesInvestProject" type="d3p1:FactLineInvestProject" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesCredit" type="d3p1:FactLineCredit" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesDZ" type="d3p1:FactLineDZ" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesDocKPI" type="d3p1:LineDocKPI" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="Version" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Data1" type="xs:dateTime" nillable="true"/>
+		<property name="Data2" type="xs:dateTime" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesBS" type="d3p1:FactBSLine" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesPL" type="d3p1:FactPLLine" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LinesCFD" type="d3p1:FactCFDLine" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="Status" type="xs:string"/>
+	</objectType>
+	<objectType name="FactLineInvestProject">
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="ProjectDescription" type="xs:string" nillable="true"/>
+		<property name="TypeOfInvestmentGUID" type="xs:string" nillable="true"/>
+		<property name="AssetCategoryGUID" type="xs:string" nillable="true"/>
+		<property name="ProjectCustomerGUID" type="xs:string" nillable="true"/>
+		<property name="Currency" type="xs:string" nillable="true"/>
+		<property name="UnitPrice" type="xs:double" nillable="true"/>
+		<property name="Volume" type="xs:double" nillable="true"/>
+		<property name="AmountExpenses" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="FactLineCredit">
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="Contract" type="xs:string" nillable="true"/>
+		<property name="ContractNumber" type="xs:string" nillable="true"/>
+		<property name="ContractDate" type="xs:dateTime" nillable="true"/>
+		<property name="MaturityDate" type="xs:dateTime" nillable="true"/>
+		<property name="Counterparty" type="xs:string" nillable="true"/>
+		<property name="CounterpartyINN" type="xs:string" nillable="true"/>
+		<property name="DebtToolGUID" type="xs:string" nillable="true"/>
+		<property name="LoanLenderTypeGUID" type="xs:string" nillable="true"/>
+		<property name="Currency" type="xs:string" nillable="true"/>
+		<property name="Indexing" type="xs:boolean" nillable="true"/>
+		<property name="ExchangeRateOnDate" type="xs:double" nillable="true"/>
+		<property name="LoanTerms" type="xs:double" nillable="true"/>
+		<property name="InterestRate" type="xs:double" nillable="true"/>
+		<property name="PurposeOfFundsGUID" type="xs:string" nillable="true"/>
+		<property name="ContractSumm" type="xs:double" nillable="true"/>
+		<property name="AmountOfDisbursement" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestBalance" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountByPeriod" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestByPeriod" type="xs:double" nillable="true"/>
+		<property name="RevaluationByPeriod" type="xs:double" nillable="true"/>
+		<property name="OtherOperationByPeriod" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountEndBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestEndBalance" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="FactLineDZ">
+		<property name="Period" type="xs:dateTime" nillable="true"/>
+		<property name="ContractNumber" type="xs:string" nillable="true"/>
+		<property name="Contract" type="xs:string" nillable="true"/>
+		<property name="ContractDate" type="xs:dateTime" nillable="true"/>
+		<property name="MaturityDate" type="xs:dateTime" nillable="true"/>
+		<property name="Counterparty" type="xs:string" nillable="true"/>
+		<property name="CounterpartyINN" type="xs:string" nillable="true"/>
+		<property name="DebtToolGUID" type="xs:string" nillable="true"/>
+		<property name="LoanLenderTypeGUID" type="xs:string" nillable="true"/>
+		<property name="Currency" type="xs:string" nillable="true"/>
+		<property name="Indexing" type="xs:boolean" nillable="true"/>
+		<property name="ExchangeRateOnDate" type="xs:double" nillable="true"/>
+		<property name="LoanTerms" type="xs:double" nillable="true"/>
+		<property name="InterestRate" type="xs:double" nillable="true"/>
+		<property name="PurposeOfFundsGUID" type="xs:string" nillable="true"/>
+		<property name="ContractSumm" type="xs:double" nillable="true"/>
+		<property name="AmountOfDisbursement" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestBalance" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountByPeriod" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestByPeriod" type="xs:double" nillable="true"/>
+		<property name="RevaluationByPeriod" type="xs:double" nillable="true"/>
+		<property name="OtherOperationByPeriod" type="xs:double" nillable="true"/>
+		<property name="PrincipalAmountEndBalance" type="xs:double" nillable="true"/>
+		<property name="AccruedInterestEndBalance" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="TypesOfOtherIndicators">
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="Period" type="xs:date"/>
+		<property name="ManualInput" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Display" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="TypeInd" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="BasisForFilling" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ArrayIndicatorMDM" type="d3p1:ArrayIndicatorMDM" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ArrayColumnNamesMDM" type="d3p1:ArrayColumnNamesMDM" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfTypesOfOtherIndicators">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="TypesOfOtherIndicators" type="d3p1:TypesOfOtherIndicators" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="IndicatorMDM">
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="display" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ManualInput" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="NotCollectTotals" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="BudgetItem" type="d3p1:BudgetItemMDM" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="TypeMovement" type="xs:string" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="Account" type="d3p1:AccauntMDM" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ColumnNamesMDM">
+		<property name="ColumnNameMDM" type="xs:string" nillable="true"/>
+		<property name="ColumnSynonym" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="NotDisplay" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ManualInput" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="UsesSettings" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayIndicatorMDM">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="IndicatorMDM" type="d3p1:IndicatorMDM" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayColumnNamesMDM">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ColumnNamesMDM" type="d3p1:ColumnNamesMDM" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="AccauntMDM">
+		<property name="AccauntGUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="AccauntTypeMovement" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="aDocOtherInd">
+		<property name="Number" type="xs:string" nillable="true"/>
+		<property name="Date" type="xs:dateTime"/>
+		<property name="IndicatorTypeCode" type="xs:string"/>
+		<property name="Comment" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DateBeg" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="DateEnd" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="ReportingYear" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="ReportingPeriod" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Audited" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ListOthersInd" type="d3p1:LineOthersInd" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="LineOthersInd">
+		<property name="KodInd" type="xs:string"/>
+		<property name="Ind" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="accountGUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CounterpartyGUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="sum" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountDebt" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountDebtMore100" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountDebtMore500" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountBalance" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountBalancePledge" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="DateFormation" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="MaturityDate" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="Date3" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="BS_GUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="BSname" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="organization" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="RatioApplicable" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="CUR" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="AmountDebtMore100Count" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountDebtMore500Count" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="Counterparty" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CounterpartyIIN" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Stock" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="BankName" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DepositName" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DepositRate" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PRS" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ValuePercent" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="ReportSign" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="FairValue" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="HierarchyLevel" type="xs:integer" lowerBound="0" nillable="true" fixed="false"/>
+		<property name="FairValueBoolean" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="OnRequest" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="less3months" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="Between3and12months" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="Between1and5years" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="TotalLiquidity" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="Quantity" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="SharePercent" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="TypeMovement_GUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="TypeMovementName" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CourseDirection" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="values" type="xs:anyType" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayAccountsQuery">
+		<property name="TypesOfOtherIndicator" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LineAccountsQuery" type="d3p1:LineAccountsQuery" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="LineAccountsQuery">
+		<property name="ReferenceName" type="xs:string"/>
+		<property name="ReferenceGUID" type="xs:string"/>
+		<property name="OtherIndicators" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayAccountsResponse">
+		<property name="TypesOfOtherIndicator" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LineAccountsResponse" type="d3p1:LineAccountsResponse" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="LineAccountsResponse">
+		<property name="ReferenceGUID" type="xs:string"/>
+		<property name="Accounts" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ParentGUID" type="xs:string"/>
+		<property name="CorrAccounts" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="MovementType" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="OtherIndicators" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CodeFAC" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ComplianceGoodsWithOtherIndicators">
+		<property name="BaseName" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="IIN" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="OtherInd_GUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="PRS_GUID" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayComplianceGoodsWithOtherIndicators">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ComplianceGoodsWithOtherIndicators" type="d3p1:ComplianceGoodsWithOtherIndicators" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfKPI">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="LineKPI" type="d3p1:LineKPI" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="LineKPI">
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="CodeRef" type="xs:string" nillable="true"/>
+		<property name="ParentGUID" type="xs:string" nillable="true"/>
+		<property name="ItemGUID" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="aDocKPI">
+		<property name="IncomingDoc" type="xs:string" nillable="true"/>
+		<property name="Date" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="OrganizationINN" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ThisYear" type="xs:date"/>
+		<property name="Comment" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="VersionGUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ArrayLineDocKPI" type="d3p1:LineDocKPI" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ArraySensitivityToPossibleCourseChanges">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="SensitivityToPossibleCourseChanges" type="d3p1:SensitivityToPossibleCourseChanges" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="SensitivityToPossibleCourseChanges">
+		<property name="Period" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="IndCode" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Currency" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Direction" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ExchangeRate" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="BudgetItemMDM">
+		<property name="BudgetItem" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="BudgetAccaunts"/>
+	</objectType>
+	<objectType name="LineDocKPI">
+		<property name="KPI_GUID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="M1" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M2" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M3" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M4" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M5" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M6" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M7" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M8" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M9" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M10" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M11" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="M12" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="YEAR" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="YEAR1" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="YEAR2" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="YEAR3" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="YEAR4" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArraysOfKOF">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ArrayOfKOF" type="d3p1:ArrayOfKOF" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfKOF">
+		<property name="CodeKOF" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="ArraysOfAssetCategory">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="AssetCategory" type="d3p1:AssetCategory" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="AssetCategory">
+		<property name="CodeKOF" type="xs:string" nillable="true"/>
+		<property name="AssetCategoryGUID" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="PeriodsOtherIndicators">
+		<property name="Name" type="xs:string"/>
+		<property name="Code" type="xs:string"/>
+		<property name="StartDay" type="xs:byte" lowerBound="0" nillable="true"/>
+		<property name="EndDay" type="xs:byte" lowerBound="0" nillable="true"/>
+		<property name="StartMonth" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="EndMonth" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfPeriodsOtherIndicators">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="PeriodsOtherIndicators" type="d3p1:PeriodsOtherIndicators" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="KindOfIndicator">
+		<property name="Name" type="xs:string"/>
+		<property name="Code" type="xs:string"/>
+		<property name="Note" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="PeriodsOtherIndicators" type="d3p1:PeriodsKO" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayKindOfIndicators">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="KindOfIndicators" type="d3p1:KindOfIndicator" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="PeriodsKO">
+		<property name="Code" type="xs:string"/>
+		<property name="Special" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfReportPlanFact">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ReportLine" type="d3p1:ReportLinePlanFact" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ReportLinePlanFact">
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="AllPeriod" type="xs:boolean" nillable="true"/>
+		<property name="Period" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="AmountPlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountFact" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfReportPlanFactInvest">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ReportLine" type="d3p1:ReportLinePlanFactInvest" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ReportLinePlanFactInvest">
+		<property name="TypeOfProjectsGUID" type="xs:string" nillable="true"/>
+		<property name="TypeOfInvestmentGUID" type="xs:string" nillable="true"/>
+		<property name="AssetCategoryGUID" type="xs:string" nillable="true"/>
+		<property name="ProjectCustomerGUID" type="xs:string" nillable="true"/>
+		<property name="AllPeriod" type="xs:boolean" nillable="true"/>
+		<property name="Period" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="AmountPlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AmountFact" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfReportPlanFactCredit">
+		<property xmlns:d3p1="http://EtalonRefSyncEx" name="ReportLine" type="d3p1:ReportLinePlanFactCredit" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ReportLinePlanFactCredit">
+		<property name="PurposeOfFund" type="xs:string" nillable="true"/>
+		<property name="DebtTool" type="xs:string" nillable="true"/>
+		<property name="LoanLenderType" type="xs:string" nillable="true"/>
+		<property name="DebtToolCode" type="xs:string" nillable="true"/>
+		<property name="PurposeOfFundCode" type="xs:string" nillable="true"/>
+		<property name="LoanLenderTypeCode" type="xs:string" nillable="true"/>
+		<property name="CounterpartyINN" type="xs:string" nillable="true"/>
+		<property name="Counterparty" type="xs:string" nillable="true"/>
+		<property name="AllPeriod" type="xs:boolean" nillable="true"/>
+		<property name="Period" type="xs:date" lowerBound="0" nillable="true"/>
+		<property name="PrincipalAmountBalancePlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestBalancePlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PrincipalAmountByPeriodPlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestByPeriodPlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PrincipalAmountEndBalancePlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestEndBalancePlan" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PrincipalAmountBalanceFact" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestBalanceFact" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PrincipalAmountByPeriodFact" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestByPeriodFact" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="OtherOperationsByPeriodFact" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="PrincipalAmountEndBalanceFact" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="AccruedInterestEndBalanceFact" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="FactBSLine">
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="ParentCode" type="xs:string" nillable="true"/>
+		<property name="Amount" type="xs:double" nillable="true"/>
+		<property name="BalAmount" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="FactPLLine">
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="ParentCode" type="xs:string" nillable="true"/>
+		<property name="Amount" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="FactCFDLine">
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="GUID" type="xs:string" nillable="true"/>
+		<property name="ParentCode" type="xs:string" nillable="true"/>
+		<property name="Amount" type="xs:double" nillable="true"/>
+	</objectType>
+</package>

@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСформироватьЗаданияНаСверку" id="103">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СформироватьЗаданияНаСверку</CommandName>
+				<ExtendedTooltip name="ФормаСформироватьЗаданияНаСверкуРасширеннаяПодсказка" id="104"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПараметры" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры:</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="32">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<InputField name="Период" id="87">
+							<DataPath>Запись.Period</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="89"/>
+						</InputField>
+						<InputField name="GUID" id="4">
+							<DataPath>Запись.GUID</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="GUIDКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="GUIDРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Организация" id="100">
+							<DataPath>Запись.Организация</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="102"/>
+							<Events>
+								<Event name="OnChange">ОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="База" id="7">
+							<DataPath>Запись.База</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="БазаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<UsualGroup name="ГруппаВыборСверки" id="90">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбор сверки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбор сверки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВыборСверкиРасширеннаяПодсказка" id="91"/>
+							<ChildItems>
+								<CheckBoxField name="ПолнаяСверка" id="92">
+									<DataPath>Запись.ВыполнитьПолнуюСверку</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПолнаяСверкаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ПолнаяСверкаРасширеннаяПодсказка" id="94"/>
+									<Events>
+										<Event name="OnChange">ПолнаяСверкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ОбъектСверки" id="10">
+									<DataPath>Запись.ОбъектСверки</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОбъектСверкиКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ОбъектСверкиРасширеннаяПодсказка" id="12"/>
+									<Events>
+										<Event name="ChoiceProcessing">ОбъектСверкиОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСтатус" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа статус</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа статус</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтатусРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<InputField name="Статус" id="13">
+									<DataPath>Запись.Статус</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтатусКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="ДатаСтатуса" id="82">
+									<DataPath>Запись.ДатаСтатуса</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаСтатусаКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ДатаСтатусаРасширеннаяПодсказка" id="84"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПериод" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа период</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа период</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="63"/>
+							<ChildItems>
+								<InputField name="ДатаНачала" id="59">
+									<DataPath>Запись.ДатаНачала</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="61"/>
+								</InputField>
+								<InputField name="ДатаОкончания" id="64">
+									<DataPath>Запись.ДатаОкончания</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="66"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДопПараметры" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа доп параметры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа доп параметры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДопПараметрыРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<CheckBoxField name="НужнаПодробнаяСверка" id="70">
+									<DataPath>Запись.ВыполнитьПодробнуюСверку</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НужнаПодробнаяСверкаКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="НужнаПодробнаяСверкаРасширеннаяПодсказка" id="72"/>
+								</CheckBoxField>
+								<CheckBoxField name="РегистрироватьИзменения" id="67">
+									<DataPath>Запись.РегистрироватьИзменения</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РегистрироватьИзмененияКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="РегистрироватьИзмененияРасширеннаяПодсказка" id="69"/>
+								</CheckBoxField>
+								<CheckBoxField name="УдалитьВSQL" id="79">
+									<DataPath>Запись.УдалитьИзSQL</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УдалитьВSQLКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="УдалитьВSQLРасширеннаяПодсказка" id="81"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИтог" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог:</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа итог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаИтогРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="34">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="ВремяВыполненияЗадачи" id="25">
+							<DataPath>Запись.ВремяВыполненияЗадачи</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВремяВыполненияЗадачиКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ВремяВыполненияЗадачиРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<CheckBoxField name="ЕстьРасхождения" id="36">
+							<DataPath>Запись.ЕстьРасхождения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЕстьРасхожденияКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ЕстьРасхожденияРасширеннаяПодсказка" id="38"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="ГруппаСтраницы" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<Page name="РезультатОбычнойСверки" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрая сверка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат обычной сверки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>HorizontalIfPossible</Group>
+							<ExtendedTooltip name="РезультатОбычнойСверкиРасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<InputField name="Результат1С" id="19">
+									<DataPath>Запись.Результат1С</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="Результат1СКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="Результат1СРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="РезультатSQL" id="22">
+									<DataPath>Запись.РезультатSQL</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатSQLКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="РезультатSQLРасширеннаяПодсказка" id="24"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="РезультатПодробнойСверки" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подробная сверка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат подробной сверки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РезультатПодробнойСверкиРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<Button name="ВыгрузитьВMXL" id="49">
+									<Type>UsualButton</Type>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.ВыгрузитьВMXL</CommandName>
+									<ExtendedTooltip name="ВыгрузитьВMXLРасширеннаяПодсказка" id="50"/>
+								</Button>
+								<UsualGroup name="Группа3" id="51">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="52"/>
+									<ChildItems>
+										<InputField name="Результат1СПодробнаяСверка" id="43">
+											<DataPath>Запись.Результат1СПодробнаяСверка</DataPath>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="Результат1СПодробнаяСверкаКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="Результат1СПодробнаяСверкаРасширеннаяПодсказка" id="45"/>
+										</InputField>
+										<InputField name="РезультатSQLПодробнаяСверка" id="46">
+											<DataPath>Запись.РезультатSQLПодробнаяСверка</DataPath>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РезультатSQLПодробнаяСверкаКонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="РезультатSQLПодробнаяСверкаРасширеннаяПодсказка" id="48"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="РезультатПолнаяСверка" id="95">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая сверка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат полная сверка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РезультатПолнаяСверкаРасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<HTMLDocumentField name="РезультатПолнойСверки" id="97">
+									<DataPath>HTMLРезультатПолнойСверки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Результат полной сверки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РезультатПолнойСверкиКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="РезультатПолнойСверкиРасширеннаяПодсказка" id="99"/>
+								</HTMLDocumentField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<InputField name="Примечание" id="16">
+					<DataPath>Запись.Примечание</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПримечаниеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЗапросыНаСверку</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="HTMLРезультатПолнойСверки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTMLРезультат полной сверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыгрузитьВMXL" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в MXL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить ВMXL</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьВMXL</Action>
+		</Command>
+		<Command name="СформироватьЗаданияНаСверку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать задания на сверку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать задания на сверку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьЗаданияНаСверку</Action>
+		</Command>
+	</Commands>
+</Form>
